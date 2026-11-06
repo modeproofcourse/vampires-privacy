@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VAMPIRES! – Política de Privacidade</title>
+<!-- >>> hreflang -->
+<link rel="alternate" hreflang="cs" href="https://modeproofcourse.github.io/vampires-privacy/">
+<link rel="alternate" hreflang="en" href="https://modeproofcourse.github.io/vampires-privacy/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://modeproofcourse.github.io/vampires-privacy/pt-br/">
+<link rel="alternate" hreflang="es-419" href="https://modeproofcourse.github.io/vampires-privacy/es/">
+<link rel="alternate" hreflang="de" href="https://modeproofcourse.github.io/vampires-privacy/de/">
+<link rel="alternate" hreflang="fr" href="https://modeproofcourse.github.io/vampires-privacy/fr/">
+<link rel="alternate" hreflang="x-default" href="https://modeproofcourse.github.io/vampires-privacy/en/">
+<!-- <<< hreflang -->
+<style>
+	:root { --bg: #fff; --text: #1d1a1c; --muted: #6b6468; --accent: #a8122a; }
+	@media (prefers-color-scheme: dark) { :root { --bg: #141012; --text: #ece6e8; --muted: #a59ca0; --accent: #ff5468; } }
+	body { background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+	h1 { color: var(--accent); font-size: 1.6em; }
+	h2 { font-size: 1.15em; margin-top: 2em; }
+	.muted { color: var(--muted); }
+	.langs { font-size: .9em; color: var(--muted); }
+	.langs a { color: inherit; }
+	hr { border: 0; border-top: 1px solid var(--muted); opacity: .4; margin: 3em 0; }
+</style>
+</head>
+<body>
+<!-- >>> jazyky -->
+<nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <b aria-current="page" lang="pt-BR">Português (Brasil)</b> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
+<!-- <<< jazyky -->
+<h1>VAMPIRES! – Política de Privacidade</h1>
+<p class="muted">Em vigor desde 2 de novembro de 2026 · Desenvolvedor: Martin Gofroj</p>
+
+<h2>Quais dados o jogo processa</h2>
+<p>O jogo não exige cadastro nem login e, por conta própria, não coleta seu nome, e-mail, localização nem contatos
+(sobre os dados processados pelo serviço de anúncios do Google, veja a seção Anúncios abaixo).
+Para que os rankings online e o recurso de amigos funcionem, ele envia ao servidor os seguintes dados:</p>
+<ul>
+	<li><b>um ID de jogador aleatório</b> e uma chave secreta, gerados na primeira vez que o jogo é aberto (não estão ligados a você como pessoa nem ao seu dispositivo; o servidor guarda apenas um hash da chave),</li>
+	<li><b>o apelido</b> que você escolhe no jogo (o padrão é “Vampiro” com um número aleatório),</li>
+	<li><b>resultados das partidas</b>: pontuação, duração da partida, número de abates, personagem escolhido e data e hora da partida,</li>
+	<li><b>um código de convite</b> e quem convidou você para o jogo,</li>
+	<li><b>amigos, desafios e mensagens</b>: sua lista de amigos, os desafios entre amigos com os resultados e as mensagens prontas dos desafios (o jogo não envia texto livre),</li>
+	<li><b>denúncias e bloqueios</b>: quem você denuncia e por quê, e quem você bloqueia. Só a administração do jogo vê as denúncias; o jogador denunciado não é avisado,</li>
+	<li><b>um token de notificação</b> (só se você permitir notificações): um identificador aleatório do app no seu celular, usado para enviar a você notificações sobre desafios de amigos.
+	As notificações são entregues pelo <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; o token é usado apenas para isso
+	e é guardado junto com o idioma do jogo, para que as notificações cheguem no seu idioma. Ele é excluído quando você desinstala o jogo.</li>
+</ul>
+<p>O servidor também registra quando o jogo esteve online pela última vez e usa isso para mostrar a outros jogadores, no ranking e nas listas de amigos, se você está jogando agora.
+A partir das partidas concluídas, o servidor calcula seu nível da conta (experiência) e soma as noites superadas e o tempo de jogo; esses dados aparecem ao lado do seu retrato e no seu perfil de jogador.
+Seu apelido e seus resultados ficam visíveis publicamente nos rankings e nas listas de amigos de outros jogadores. Por isso, não use seu nome real nem outros dados pessoais no apelido.</p>
+<p>Seu progresso no jogo, as configurações e seus próprios resultados ficam salvos no seu dispositivo. Se você tiver feito login no
+<a href="https://policies.google.com/privacy">Google Play Games</a> no celular, o jogo também faz backup do seu progresso nos Jogos salvos da sua Conta do Google,
+para que ele possa ser restaurado depois de reinstalar o jogo ou em um celular novo. Os dados do jogo também podem entrar no backup do sistema Android
+(se ele estiver ativado no seu celular). Os dois backups são gerenciados pelo Google; não temos acesso à sua Conta do Google.</p>
+
+<h2>Onde os dados ficam armazenados</h2>
+<p>Os dados online ficam armazenados em um banco de dados do serviço <a href="https://supabase.com/privacy">Supabase</a>. A conexão é criptografada (HTTPS).
+Esses dados nunca são vendidos nem repassados a ninguém e não são usados para publicidade nem para rastreamento.</p>
+
+<h2>Estatísticas de jogo</h2>
+<p>Para entender onde o jogo está difícil demais e do que os jogadores gostam, o jogo envia estatísticas de jogo anônimas ao
+<a href="https://firebase.google.com/support/privacy">Google Analytics para Firebase</a>: por exemplo, o início e o fim de uma partida,
+as melhorias escolhidas, compras com a moeda do jogo, anúncios com recompensa assistidos e telas abertas, junto com informações do dispositivo
+(modelo, versão do sistema e do jogo, país estimado a partir do endereço IP) e um ID aleatório da instalação do app. As estatísticas não são vinculadas
+ao seu apelido nem ao seu ID de jogador, não usam o ID de publicidade e não são vinculadas a anúncios. No Espaço Econômico Europeu,
+no Reino Unido e na Suíça, elas só são enviadas com o seu consentimento (na mesma janela usada para os anúncios; você pode mudar isso
+em Configurações → Privacidade). O Google as mantém por no máximo 14 meses.</p>
+
+<h2>Anúncios</h2>
+<p>O jogo oferece anúncios com recompensa opcionais (por exemplo, para voltar à luta ou dobrar o ouro) – o anúncio só começa
+quando você toca nele. Os anúncios são exibidos pelo <a href="https://policies.google.com/technologies/ads">Google AdMob</a>,
+um serviço do Google que, para isso, pode processar o ID de publicidade do seu dispositivo, o endereço IP e a localização aproximada obtida a partir dele,
+informações do dispositivo, interações com anúncios (visualizações, cliques) e dados de diagnóstico. Esses dados servem para exibir e medir anúncios,
+evitar fraudes e – se você consentir – personalizar os anúncios.
+Para mais detalhes, consulte a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>
+e <a href="https://policies.google.com/technologies/partner-sites">como o Google usa informações de sites ou apps que utilizam seus serviços</a>.</p>
+<p>No Espaço Econômico Europeu, no Reino Unido e na Suíça, o jogo pede seu consentimento na primeira vez que é aberto.
+Você pode mudar sua escolha a qualquer momento no jogo, em Configurações → Privacidade. Também é possível redefinir ou excluir seu ID de publicidade
+nas configurações do celular (Google → Anúncios).</p>
+
+<h2>Para quem mora nos EUA</h2>
+<p>Se você mora em um estado dos EUA que tem uma lei de privacidade do consumidor (por exemplo, Califórnia, Virgínia, Colorado, Connecticut ou Utah),
+também tem estes direitos:</p>
+<ul>
+	<li><b>Recusar a publicidade direcionada e a “venda” ou o “compartilhamento” de informações pessoais.</b> Não vendemos informações pessoais por dinheiro. No entanto, o Google AdMob pode
+	usar seu ID de publicidade e as informações do dispositivo para anúncios direcionados, o que as leis de alguns estados consideram compartilhamento. Você pode recusar isso
+	no jogo, em Configurações → Privacidade, ou desativando a personalização de anúncios nas configurações do celular.</li>
+	<li><b>Saber quais dados temos sobre você e pedir que sejam corrigidos ou excluídos.</b> Envie um e-mail para o endereço abaixo. Responderemos em até 45 dias.</li>
+	<li><b>Sem discriminação.</b> Se você exercer seus direitos, o jogo continuará funcionando do mesmo jeito para você.</li>
+</ul>
+<p>Categorias de dados coletados: identificadores (ID de jogador aleatório, ID da instalação do app, ID de publicidade), apelido, atividade no jogo (incluindo estatísticas de jogo) e interações com anúncios,
+localização aproximada obtida a partir do endereço IP e dados de diagnóstico. As finalidades e os destinatários estão descritos acima.</p>
+
+<h2>Pagamentos</h2>
+<p>Esta versão do jogo não processa pagamentos.</p>
+
+<h2>Exclusão dos seus dados</h2>
+<p>Você pode excluir sua conta online com todos os dados online (apelido, resultados, nível da conta, amigos, desafios, mensagens, denúncias e bloqueios) no jogo:
+Configurações → <b>Excluir conta online</b>. A exclusão é imediata e definitiva. Sem o jogo, você pode pedir a exclusão por e-mail no endereço abaixo
+(informe seu apelido e o código de convite que aparece em Amigos) – vamos excluí-la em até 30 dias. Passo a passo: <a href="delete-account.html">Excluir sua conta</a>.
+Ao desinstalar o jogo, os dados salvos no dispositivo são excluídos (os backups na sua Conta do Google podem ser excluídos nas configurações do Google).</p>
+<p>Regras para apelidos e para o comportamento no jogo: <a href="rules.html">Regras da Comunidade</a>.</p>
+
+<h2>Crianças</h2>
+<p>O jogo não é destinado a crianças menores de 13 anos.</p>
+
+<h2>Contato</h2>
+<p>E-mail: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
+<p class="muted">Esta é uma tradução do original em tcheco. Em caso de divergência, prevalece a versão em tcheco.</p>
+</body>
+</html>

@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VAMPIRES! – Zásady ochrany osobních údajů</title>
+<!-- >>> hreflang -->
+<link rel="alternate" hreflang="cs" href="https://modeproofcourse.github.io/vampires-privacy/">
+<link rel="alternate" hreflang="en" href="https://modeproofcourse.github.io/vampires-privacy/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://modeproofcourse.github.io/vampires-privacy/pt-br/">
+<link rel="alternate" hreflang="es-419" href="https://modeproofcourse.github.io/vampires-privacy/es/">
+<link rel="alternate" hreflang="de" href="https://modeproofcourse.github.io/vampires-privacy/de/">
+<link rel="alternate" hreflang="fr" href="https://modeproofcourse.github.io/vampires-privacy/fr/">
+<link rel="alternate" hreflang="x-default" href="https://modeproofcourse.github.io/vampires-privacy/en/">
+<!-- <<< hreflang -->
 <style>
 	:root { --bg: #fff; --text: #1d1a1c; --muted: #6b6468; --accent: #a8122a; }
 	@media (prefers-color-scheme: dark) { :root { --bg: #141012; --text: #ece6e8; --muted: #a59ca0; --accent: #ff5468; } }
@@ -11,10 +20,15 @@
 	h1 { color: var(--accent); font-size: 1.6em; }
 	h2 { font-size: 1.15em; margin-top: 2em; }
 	.muted { color: var(--muted); }
+	.langs { font-size: .9em; color: var(--muted); }
+	.langs a { color: inherit; }
 	hr { border: 0; border-top: 1px solid var(--muted); opacity: .4; margin: 3em 0; }
 </style>
 </head>
 <body>
+<!-- >>> jazyky -->
+<nav class="langs" aria-label="Language"><b aria-current="page" lang="cs">Čeština</b> · <a href="en/" hreflang="en" lang="en">English</a> · <a href="pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="es/" hreflang="es-419" lang="es-419">Español</a> · <a href="de/" hreflang="de" lang="de">Deutsch</a> · <a href="fr/" hreflang="fr" lang="fr">Français</a></nav>
+<!-- <<< jazyky -->
 <h1>VAMPIRES! – Zásady ochrany osobních údajů</h1>
 <p class="muted">Platné od 2. 11. 2026 · Vývojář: Martin Gofroj</p>
 
@@ -31,10 +45,10 @@ Aby fungovaly online žebříčky a přátelé, posílá na server tyto údaje:<
 	<li><b>nahlášení a blokování</b>: koho nahlašuješ a z jakého důvodu a koho blokuješ. Hlášení vidí jen správce hry, nahlášený hráč se o nich nedozví,</li>
 	<li><b>token pro upozornění</b> (jen když povolíš oznámení): náhodný identifikátor aplikace v telefonu, přes který ti přijde upozornění na výzvy přátel.
 	Upozornění doručuje služba <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; token se používá jen k tomu
-	a smaže se, když hru odinstaluješ.</li>
+	(spolu s jazykem hry, aby ti upozornění přišla v tvém jazyce) a smaže se, když hru odinstaluješ.</li>
 </ul>
 <p>Server si také pamatuje, kdy byla hra naposledy online, a podle toho ukazuje ostatním hráčům v žebříčku a v seznamu přátel, jestli jsi právě ve hře.
-Z dohraných her server sčítá úroveň hráče (zkušenosti), počet přežitých nocí a odehraný čas; ty jsou vidět u tvé busty a na kartě hráče.
+Z dohraných her server počítá úroveň hráče (zkušenosti), počet přežitých nocí a odehraný čas; ty jsou vidět u tvé busty a na kartě hráče.
 Přezdívka a výsledky jsou veřejně vidět v žebříčcích a v seznamu přátel ostatních hráčů. Proto do přezdívky nedávej své skutečné jméno ani jiné osobní údaje.</p>
 <p>Postup ve hře, nastavení a vlastní výsledky se ukládají v zařízení. Pokud jsi v telefonu přihlášený do
 <a href="https://policies.google.com/privacy">Google Play Her</a>, hra si postup zálohuje i do Uložených her ve tvém Google účtu,
@@ -52,7 +66,7 @@ vybraná vylepšení, nákupy za herní měnu, zhlédnuté reklamy a otevřené 
 (model, verze systému a hry, země odvozená z IP adresy) a náhodným ID instalace aplikace. Statistiky nejsou spojené
 s tvou přezdívkou ani ID hráče, nepoužívají reklamní ID a nepropojují se s reklamami. V Evropském hospodářském prostoru,
 Spojeném království a Švýcarsku se odesílají jen s tvým souhlasem (ve stejném okně jako u reklam, změnit ho můžeš
-v Nastavení → Soukromí a reklamy). Google je uchovává nejvýš 14 měsíců.</p>
+v Nastavení → Soukromí). Google je uchovává nejvýš 14 měsíců.</p>
 
 <h2>Reklamy</h2>
 <p>Hra nabízí dobrovolné reklamy za odměnu (například oživení nebo dvojnásobek zlaťáků) – reklama se spustí jen tehdy,
@@ -63,7 +77,7 @@ předcházení podvodům a – pokud k tomu dáš souhlas – k personalizaci re
 Podrobnosti najdeš v <a href="https://policies.google.com/privacy">zásadách ochrany soukromí Googlu</a>
 a v <a href="https://policies.google.com/technologies/partner-sites">tom, jak Google používá údaje z aplikací partnerů</a>.</p>
 <p>V Evropském hospodářském prostoru, Spojeném království a Švýcarsku se hra při prvním spuštění zeptá na souhlas.
-Volbu můžeš kdykoli změnit ve hře v Nastavení → Soukromí a reklamy. Reklamní ID můžeš také resetovat nebo smazat
+Volbu můžeš kdykoli změnit ve hře v Nastavení → Soukromí. Reklamní ID můžeš také resetovat nebo smazat
 v nastavení telefonu (Google → Reklamy).</p>
 
 <h2>Hráči z USA</h2>
@@ -72,7 +86,7 @@ máš navíc tato práva:</p>
 <ul>
 	<li><b>Odmítnout cílenou reklamu a „prodej“ nebo „sdílení“ údajů.</b> Za peníze údaje neprodáváme. Google AdMob ale může
 	reklamní ID a údaje o zařízení používat k cílené reklamě, což zákony některých států považují za sdílení. Odmítnout to můžeš
-	ve hře v Nastavení → Soukromí a reklamy, nebo vypnutím personalizace reklam v nastavení telefonu.</li>
+	ve hře v Nastavení → Soukromí, nebo vypnutím personalizace reklam v nastavení telefonu.</li>
 	<li><b>Vědět, jaké údaje o tobě máme, nechat je opravit nebo smazat.</b> Napiš na e-mail níže. Odpovíme do 45 dnů.</li>
 	<li><b>Žádné znevýhodnění.</b> Když svá práva uplatníš, hra ti bude fungovat stejně.</li>
 </ul>
@@ -103,11 +117,11 @@ Odinstalováním hry se smažou data uložená v zařízení (zálohy v Google �
 For online leaderboards and friends, it sends to the server: a <b>random player ID</b> and secret key generated on first launch,
 the <b>nickname</b> you choose, your <b>game results</b> (score, run length, kills, character, time played), your <b>invite code</b> and inviter,
 your <b>friends, challenges and messages</b> (only pre-written challenge messages, no free text), the <b>reports and blocks</b> you make
-(only the game's moderator sees reports; the reported player is not told),
+(only the game admin sees reports; the reported player is not told),
 and – only if you allow notifications – a <b>notification token</b> (a random identifier of the app on your phone) used solely to deliver friend challenge
-notifications via <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; it is deleted when you uninstall the game.
+notifications via <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a> (stored with the game's language so they arrive in your language); it is deleted when you uninstall the game.
 The server also remembers when the game was last online and shows other players on leaderboards and friend lists whether you are online right now.
-From finished games the server also adds up your player level (experience), nights survived and time played, which are shown on your portrait and player card.
+From completed runs the server also calculates your player level (experience) and totals your nights survived and time played, which are shown on your portrait and player card.
 Nicknames and results are publicly visible on leaderboards, so do not use your real name as a nickname. Game progress and settings are stored on your device;
 if you are signed in to <a href="https://policies.google.com/privacy">Google Play Games</a>, the game also backs up your progress to Saved Games in your Google account
 so it can be restored after reinstalling or on a new phone. Game data may also be included in Android's system backup if you have it turned on.
@@ -118,18 +132,18 @@ to <a href="https://firebase.google.com/support/privacy">Google Analytics for Fi
 in-game currency purchases, rewarded ads watched and screens opened – together with device information (model, OS and game version,
 country derived from IP address) and a random app instance ID. Statistics are not linked to your nickname or player ID, do not use the
 advertising ID and are not linked to advertising. In the EEA, UK and Switzerland they are sent only with your consent (the same dialog as for ads;
-change it in Settings → Privacy and ads). Google keeps them for at most 14 months.</p>
+change it in Settings → Privacy). Google keeps them for at most 14 months.</p>
 <p><b>Ads:</b> the game offers optional rewarded ads that play only when you tap them. Ads are served by
 <a href="https://policies.google.com/technologies/ads">Google AdMob</a>, which may process your device's advertising ID,
 IP address and approximate location derived from it, device information, ad interactions and diagnostics to show and measure ads,
 prevent fraud and, with your consent, personalize ads – see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
 and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>.
-In the EEA, UK and Switzerland the game asks for your consent on first launch; you can change it anytime in Settings → Privacy and ads,
-and reset or delete your advertising ID in your phone settings. This version makes no payments.</p>
+In the EEA, UK and Switzerland the game asks for your consent on first launch; you can change it anytime in Settings → Privacy,
+and reset or delete your advertising ID in your phone settings. This version does not process payments.</p>
 <p><b>US state privacy rights:</b> if you live in a US state with a consumer privacy law (such as California, Virginia, Colorado,
 Connecticut or Utah), you have these additional rights. <b>Opt out of targeted advertising and the “sale” or “sharing” of personal information:</b>
 we do not sell personal information for money, but Google AdMob may use your advertising ID and device information for targeted ads,
-which some state laws treat as sharing. You can opt out in the game under Settings → Privacy and ads, or by turning off ad personalization
+which some state laws treat as sharing. You can opt out in the game under Settings → Privacy, or by turning off ad personalization
 in your phone settings. <b>Know, correct and delete:</b> e-mail us at the address below and we will respond within 45 days.
 <b>No discrimination:</b> the game works the same if you exercise these rights. Categories collected: identifiers (random player ID, app instance ID,
 advertising ID), nickname, in-game activity (including gameplay statistics) and ad interactions, approximate location derived from IP address, and diagnostics,

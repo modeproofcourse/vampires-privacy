@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VAMPIRES! – Politique de confidentialité</title>
+<!-- >>> hreflang -->
+<link rel="alternate" hreflang="cs" href="https://modeproofcourse.github.io/vampires-privacy/">
+<link rel="alternate" hreflang="en" href="https://modeproofcourse.github.io/vampires-privacy/en/">
+<link rel="alternate" hreflang="pt-BR" href="https://modeproofcourse.github.io/vampires-privacy/pt-br/">
+<link rel="alternate" hreflang="es-419" href="https://modeproofcourse.github.io/vampires-privacy/es/">
+<link rel="alternate" hreflang="de" href="https://modeproofcourse.github.io/vampires-privacy/de/">
+<link rel="alternate" hreflang="fr" href="https://modeproofcourse.github.io/vampires-privacy/fr/">
+<link rel="alternate" hreflang="x-default" href="https://modeproofcourse.github.io/vampires-privacy/en/">
+<!-- <<< hreflang -->
+<style>
+	:root { --bg: #fff; --text: #1d1a1c; --muted: #6b6468; --accent: #a8122a; }
+	@media (prefers-color-scheme: dark) { :root { --bg: #141012; --text: #ece6e8; --muted: #a59ca0; --accent: #ff5468; } }
+	body { background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+	h1 { color: var(--accent); font-size: 1.6em; }
+	h2 { font-size: 1.15em; margin-top: 2em; }
+	.muted { color: var(--muted); }
+	.langs { font-size: .9em; color: var(--muted); }
+	.langs a { color: inherit; }
+	hr { border: 0; border-top: 1px solid var(--muted); opacity: .4; margin: 3em 0; }
+</style>
+</head>
+<body>
+<!-- >>> jazyky -->
+<nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <b aria-current="page" lang="fr">Français</b></nav>
+<!-- <<< jazyky -->
+<h1>VAMPIRES! – Politique de confidentialité</h1>
+<p class="muted">En vigueur à partir du 2 novembre 2026 · Développeur&nbsp;: Martin Gofroj</p>
+
+<h2>Données traitées par le jeu</h2>
+<p>Le jeu ne demande ni inscription ni connexion et ne collecte pas lui-même ton nom, ton e-mail, ta position ni tes contacts
+(pour les données traitées par le service publicitaire de Google, voir «&nbsp;Publicités&nbsp;» ci-dessous).
+Pour que les classements en ligne et les amis fonctionnent, il envoie au serveur les données suivantes&nbsp;:</p>
+<ul>
+	<li><b>un identifiant de joueur aléatoire</b> et une clé secrète, générés au premier lancement (ils ne sont liés ni à ta personne ni à ton appareil&nbsp;; le serveur ne conserve qu'une empreinte de la clé),</li>
+	<li><b>le pseudo</b> que tu choisis dans le jeu (par défaut, «&nbsp;Vampire&nbsp;» suivi d'un nombre aléatoire),</li>
+	<li><b>les résultats de tes parties</b>&nbsp;: score, durée de la partie, nombre d'ennemis éliminés, personnage choisi, date et heure de la partie,</li>
+	<li><b>un code d'invitation</b> et la personne à l'origine de ton invitation au jeu,</li>
+	<li><b>les amis, défis et messages</b>&nbsp;: ta liste d'amis, les défis lancés à tes amis avec leurs résultats et les messages prédéfinis des défis (le jeu n'envoie aucun texte libre),</li>
+	<li><b>les signalements et blocages</b>&nbsp;: qui tu signales et pour quelle raison, et qui tu bloques. Seul l'administrateur du jeu voit les signalements&nbsp;; la personne signalée n'en est pas informée,</li>
+	<li><b>un jeton de notification</b> (seulement si tu autorises les notifications)&nbsp;: un identifiant aléatoire de l'application sur ton téléphone, qui sert à t'envoyer des notifications sur les défis de tes amis.
+	Les notifications sont envoyées via <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>&nbsp;; le jeton ne sert qu'à cela,
+	il est enregistré avec la langue du jeu pour que les notifications arrivent dans ta langue, et il est supprimé quand tu désinstalles le jeu.</li>
+</ul>
+<p>Le serveur enregistre aussi quand le jeu a été en ligne pour la dernière fois, ce qui permet d'indiquer aux autres joueurs, dans le classement et dans leurs listes d'amis, si tu es en jeu en ce moment.
+À partir des parties terminées, le serveur calcule ton niveau de compte (expérience), le nombre de nuits auxquelles tu as survécu et ton temps de jeu&nbsp;; ils s'affichent à côté de ton portrait et sur ta carte de joueur.
+Ton pseudo et tes résultats sont visibles publiquement dans les classements et dans les listes d'amis des autres joueurs. N'utilise donc pas ton vrai nom ni aucune autre donnée personnelle dans ton pseudo.</p>
+<p>Ta progression, tes paramètres et tes propres résultats sont enregistrés sur ton appareil. Si ton compte est connecté à
+<a href="https://policies.google.com/privacy">Google Play Jeux</a> sur ton téléphone, le jeu sauvegarde aussi ta progression dans les Jeux enregistrés de ton compte Google,
+pour pouvoir la restaurer après une réinstallation ou sur un nouveau téléphone. Les données du jeu peuvent aussi être incluses dans la sauvegarde système d'Android
+(si elle est activée sur ton téléphone). Ces deux sauvegardes sont gérées par Google&nbsp;; nous n'avons pas accès à ton compte Google.</p>
+
+<h2>Où sont stockées les données</h2>
+<p>Les données en ligne sont stockées dans une base de données du service <a href="https://supabase.com/privacy">Supabase</a>. La connexion est chiffrée (HTTPS).
+Ces données ne sont jamais vendues ni transmises à qui que ce soit, et elles ne sont pas utilisées à des fins publicitaires ni de suivi.</p>
+
+<h2>Statistiques de jeu</h2>
+<p>Pour savoir où le jeu est trop difficile et ce qui plaît aux joueurs, le jeu envoie des statistiques de jeu anonymes à
+<a href="https://firebase.google.com/support/privacy">Google Analytics pour Firebase</a>&nbsp;: par exemple le début et la fin d'une partie,
+les améliorations choisies, les achats avec la monnaie du jeu, les publicités avec récompense regardées et les écrans ouverts, ainsi que des informations sur l'appareil
+(modèle, version du système et du jeu, pays déduit de l'adresse IP) et un identifiant aléatoire d'instance d'application. Les statistiques ne sont liées
+ni à ton pseudo ni à ton identifiant de joueur, n'utilisent pas l'identifiant publicitaire et ne sont pas associées aux publicités. Dans l'Espace économique européen,
+au Royaume-Uni et en Suisse, elles ne sont envoyées qu'avec ton consentement (demandé dans la même fenêtre que pour les publicités&nbsp;; tu peux le modifier
+dans Paramètres → Confidentialité). Google les conserve au maximum 14&nbsp;mois.</p>
+
+<h2>Publicités</h2>
+<p>Le jeu propose des publicités avec récompense facultatives (par exemple pour continuer la partie ou doubler ton or) – une publicité ne se lance que
+si tu la touches. Les publicités sont diffusées par <a href="https://policies.google.com/technologies/ads">Google AdMob</a>,
+un service de Google qui peut traiter à cette fin l'identifiant publicitaire de ton appareil, ton adresse IP et la position approximative qui en est déduite,
+des informations sur l'appareil, tes interactions avec les publicités (affichages, clics) et des données de diagnostic. Ces données servent à afficher et mesurer les publicités,
+à prévenir la fraude et, si tu donnes ton consentement, à personnaliser les publicités.
+Pour en savoir plus, consulte les <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a>
+et la page <a href="https://policies.google.com/technologies/partner-sites">Comment Google utilise les informations des sites ou applications qui utilisent ses services</a>.</p>
+<p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, le jeu te demande ton consentement au premier lancement.
+Tu peux modifier ton choix à tout moment dans le jeu, dans Paramètres → Confidentialité. Tu peux aussi réinitialiser ou supprimer ton identifiant publicitaire
+dans les paramètres de ton téléphone (Google → Annonces).</p>
+
+<h2>Joueurs aux États-Unis</h2>
+<p>Si tu vis dans un État américain doté d'une loi sur la protection des données des consommateurs (par exemple la Californie, la Virginie, le Colorado, le Connecticut ou l'Utah),
+tu disposes aussi des droits suivants&nbsp;:</p>
+<ul>
+	<li><b>Refuser la publicité ciblée et la «&nbsp;vente&nbsp;» ou le «&nbsp;partage&nbsp;» de données personnelles.</b> Nous ne vendons pas de données personnelles contre de l'argent. Google AdMob peut toutefois
+	utiliser ton identifiant publicitaire et les informations sur ton appareil pour des publicités ciblées, ce que les lois de certains États considèrent comme un partage. Tu peux refuser
+	dans le jeu, dans Paramètres → Confidentialité, ou en désactivant la personnalisation des annonces dans les paramètres de ton téléphone.</li>
+	<li><b>Savoir quelles données nous avons sur toi, les faire corriger ou supprimer.</b> Écris-nous à l'adresse e-mail ci-dessous. Nous te répondrons sous 45&nbsp;jours.</li>
+	<li><b>Aucune discrimination.</b> Si tu exerces tes droits, le jeu fonctionnera exactement de la même façon pour toi.</li>
+</ul>
+<p>Catégories de données collectées&nbsp;: identifiants (identifiant de joueur aléatoire, identifiant d'instance d'application, identifiant publicitaire), pseudo, activité dans le jeu (y compris les statistiques de jeu) et interactions avec les publicités,
+position approximative déduite de l'adresse IP, et données de diagnostic. Les finalités et les destinataires sont décrits ci-dessus.</p>
+
+<h2>Paiements</h2>
+<p>Cette version du jeu ne traite aucun paiement.</p>
+
+<h2>Supprimer tes données</h2>
+<p>Tu peux supprimer ton compte en ligne avec toutes les données en ligne (pseudo, résultats, niveau, amis, défis, messages, signalements et blocages) dans le jeu&nbsp;:
+Paramètres → <b>Supprimer le compte en ligne</b>. Il est supprimé immédiatement et définitivement. Sans le jeu, tu peux demander la suppression par e-mail à l'adresse ci-dessous
+(indique ton pseudo et le code d'invitation affiché dans Amis) – nous le supprimerons sous 30&nbsp;jours. Pas à pas&nbsp;: <a href="delete-account.html">Supprimer ton compte</a>.
+Désinstaller le jeu supprime les données enregistrées sur l'appareil (les sauvegardes dans ton compte Google peuvent être supprimées dans les paramètres Google).</p>
+<p>Règles sur les pseudos et le comportement dans le jeu&nbsp;: <a href="rules.html">Règles de la communauté</a>.</p>
+
+<h2>Enfants</h2>
+<p>Le jeu n'est pas destiné aux enfants de moins de 13&nbsp;ans.</p>
+
+<h2>Contact</h2>
+<p>E-mail&nbsp;: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
+<p class="muted">Ceci est une traduction de l'original tchèque. En cas de divergence, la version tchèque fait foi.</p>
+</body>
+</html>
