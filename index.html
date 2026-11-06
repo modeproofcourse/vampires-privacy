@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><b aria-current="page" lang="cs">Čeština</b> · <a href="en/" hreflang="en" lang="en">English</a> · <a href="pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="es/" hreflang="es-419" lang="es-419">Español</a> · <a href="de/" hreflang="de" lang="de">Deutsch</a> · <a href="fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Zásady ochrany osobních údajů</h1>
-<p class="muted">Platné od 2. 11. 2026 · Vývojář: Martin Gofroj</p>
+<p class="muted">Platné od 6. 11. 2026 · Vývojář: Martin Gofroj</p>
 
 <h2>Co hra zpracovává</h2>
 <p>Hra nevyžaduje registraci ani přihlášení a sama nesbírá jméno, e-mail, polohu ani kontakty
@@ -45,26 +45,32 @@ Aby fungovaly online žebříčky a přátelé, posílá na server tyto údaje:<
 	<li><b>nahlášení a blokování</b>: koho nahlašuješ a z jakého důvodu a koho blokuješ. Hlášení vidí jen správce hry, nahlášený hráč se o nich nedozví,</li>
 	<li><b>token pro upozornění</b> (jen když povolíš oznámení): náhodný identifikátor aplikace v telefonu, přes který ti přijde upozornění na výzvy přátel.
 	Upozornění doručuje služba <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; token se používá jen k tomu
-	(spolu s jazykem hry, aby ti upozornění přišla v tvém jazyce) a smaže se, když hru odinstaluješ.</li>
+	(spolu s jazykem hry, aby ti upozornění přišla v tvém jazyce). Smaže se se smazáním online účtu; když hru odinstaluješ,
+	token časem přestane platit a ze serveru ho odstraníme, jakmile nám služba oznámí, že je neplatný.</li>
 </ul>
 <p>Server si také pamatuje, kdy byla hra naposledy online, a podle toho ukazuje ostatním hráčům v žebříčku a v seznamu přátel, jestli jsi právě ve hře.
 Z dohraných her server počítá úroveň hráče (zkušenosti), počet přežitých nocí a odehraný čas; ty jsou vidět u tvé busty a na kartě hráče.
 Přezdívka a výsledky jsou veřejně vidět v žebříčcích a v seznamu přátel ostatních hráčů. Proto do přezdívky nedávej své skutečné jméno ani jiné osobní údaje.</p>
-<p>Postup ve hře, nastavení a vlastní výsledky se ukládají v zařízení. Pokud jsi v telefonu přihlášený do
-<a href="https://policies.google.com/privacy">Google Play Her</a>, hra si postup zálohuje i do Uložených her ve tvém Google účtu,
+<p>Postup ve hře, nastavení a vlastní výsledky se ukládají v zařízení. Pokud v telefonu používáš
+<a href="https://policies.google.com/privacy">Google Play Hry</a>, hra si postup zálohuje i do Uložených her ve tvém Google účtu,
 aby se ti po přeinstalaci nebo na novém telefonu obnovil. Data hry může zálohovat také systémová záloha Androidu
 (pokud ji máš v telefonu zapnutou). Obě zálohy spravuje Google, my k tvému Google účtu přístup nemáme.</p>
 
 <h2>Kde jsou data uložená</h2>
-<p>Online údaje jsou uložené v databázi služby <a href="https://supabase.com/privacy">Supabase</a>. Přenos je šifrovaný (HTTPS).
-Tyto údaje se nikomu neprodávají ani nepředávají a nepoužívají se k reklamě ani ke sledování.</p>
+<p>Online údaje jsou uložené v databázi služby <a href="https://supabase.com/privacy">Supabase</a> v Evropské unii (Irsko).
+Přenos je šifrovaný (HTTPS). Online údaje neprodáváme a nepoužíváme je k reklamě ani ke sledování. Ukládá je pro nás společnost Supabase se svými subdodavateli.</p>
+<p>Supabase provozuje společnost se sídlem v Singapuru s přidruženou společností v USA; statistiky, upozornění, reklamy a Google Play Hry
+zajišťuje Google. Některé údaje se proto mohou zpracovávat i mimo EHP, zejména v Singapuru a v USA.
+Pro předání do zemí bez odpovídající úrovně ochrany se podle konkrétní služby používají standardní smluvní doložky Evropské komise.
+Předání společnosti Google LLC v USA může být založeno také na rámci EU–USA pro ochranu osobních údajů (EU-U.S. Data Privacy Framework).
+Informace o použitých zárukách a o tom, jak získat jejich kopii, ti pošleme, když nám napíšeš na e-mail níže.</p>
 
 <h2>Statistiky hraní</h2>
-<p>Abychom věděli, kde je hra moc těžká a co hráče baví, posílá hra anonymní statistiky hraní službě
+<p>Abychom věděli, kde je hra moc těžká a co hráče baví, posílá hra statistiky hraní službě
 <a href="https://firebase.google.com/support/privacy">Google Analytics pro Firebase</a>: například začátek a konec hry,
 vybraná vylepšení, nákupy za herní měnu, zhlédnuté reklamy a otevřené obrazovky, spolu s údaji o zařízení
 (model, verze systému a hry, země odvozená z IP adresy) a náhodným ID instalace aplikace. Statistiky nejsou spojené
-s tvou přezdívkou ani ID hráče, nepoužívají reklamní ID a nepropojují se s reklamami. V Evropském hospodářském prostoru,
+s tvou přezdívkou ani ID hráče (jsou vázané jen na náhodné ID instalace), nepoužívají reklamní ID a nepropojují se s reklamami. V Evropském hospodářském prostoru,
 Spojeném království a Švýcarsku se odesílají jen s tvým souhlasem (ve stejném okně jako u reklam, změnit ho můžeš
 v Nastavení → Soukromí). Google je uchovává nejvýš 14 měsíců.</p>
 
@@ -78,7 +84,36 @@ Podrobnosti najdeš v <a href="https://policies.google.com/privacy">zásadách o
 a v <a href="https://policies.google.com/technologies/partner-sites">tom, jak Google používá údaje z aplikací partnerů</a>.</p>
 <p>V Evropském hospodářském prostoru, Spojeném království a Švýcarsku se hra při prvním spuštění zeptá na souhlas.
 Volbu můžeš kdykoli změnit ve hře v Nastavení → Soukromí. Reklamní ID můžeš také resetovat nebo smazat
-v nastavení telefonu (Google → Reklamy).</p>
+v nastavení telefonu v části Reklamy (podle verze Androidu ji najdeš pod Soukromím nebo pod Googlem).</p>
+
+<h2>Proč údaje zpracováváme</h2>
+<ul>
+	<li><b>Online funkce</b> (ID hráče, přezdívka, výsledky, úroveň, žebříčky, přátelé, výzvy a vzkazy): abychom ti mohli poskytovat
+	funkce hry, které používáš (plnění smlouvy, čl. 6 odst. 1 písm. b GDPR). Bez údajů potřebných pro online účet nemohou fungovat žebříčky, přátelé ani výzvy.</li>
+	<li><b>Nahlášení, blokování, kontrola přezdívek a ochrana proti podvádění</b>: náš oprávněný zájem na bezpečné a férové hře
+	(čl. 6 odst. 1 písm. f GDPR).</li>
+	<li><b>Upozornění</b>: tvůj souhlas s jejich zasíláním a se souvisejícím zpracováním tokenu (čl. 6 odst. 1 písm. a GDPR); tento souhlas můžeš odvolat vypnutím oznámení v telefonu.</li>
+	<li><b>Statistiky hraní a personalizované reklamy</b>: tvůj souhlas (čl. 6 odst. 1 písm. a GDPR), který můžeš kdykoli změnit
+	v Nastavení → Soukromí. Reklamy bez personalizace a ochrana před podvody: náš oprávněný zájem na financování a ochraně hry (čl. 6 odst. 1 písm. f GDPR),
+	pokud dané zpracování nevyžaduje souhlas. Tam, kde je k přístupu k údajům v zařízení souhlas nutný, si ho vyžádáme. Reklama se spustí, jen když na ni klepneš.</li>
+</ul>
+
+<h2>Jak dlouho údaje uchováváme</h2>
+<ul>
+	<li>Online účet (přezdívka, výsledky, úroveň, přátelé, blokování): dokud účet nesmažeš
+	(nebo dokud hra neukončí online služby). Token pro upozornění odstraníme i dříve, pokud FCM ohlásí jeho neplatnost.</li>
+	<li>Výzvy a vzkazy: dohrané 90 dní, všechny ostatní 14 dní.</li>
+	<li>Nahlášení: 12 měsíců od posledního nahlášení.</li>
+	<li>Statistiky hraní: u Googlu nejvýš 14 měsíců.</li>
+</ul>
+
+<h2>Tvoje práva</h2>
+<p>Máš právo na přístup ke svým údajům, na jejich opravu a výmaz, na omezení zpracování a přenositelnost údajů a právo vznést
+námitku proti zpracování na základě oprávněného zájmu. Souhlas můžeš kdykoli odvolat (v Nastavení → Soukromí nebo vypnutím
+oznámení); odvolání se netýká zpracování, které proběhlo předtím. Práva uplatníš e-mailem na adrese níže – uveď přezdívku
+a kód pozvánky z Přátel, abychom tvé údaje našli. Odpovíme do jednoho měsíce.</p>
+<p>Pokud si myslíš, že s tvými údaji zacházíme špatně, můžeš podat stížnost u
+<a href="https://uoou.gov.cz">Úřadu pro ochranu osobních údajů</a> nebo u úřadu pro ochranu osobních údajů ve své zemi.</p>
 
 <h2>Hráči z USA</h2>
 <p>Pokud žiješ ve státě USA se zákonem o ochraně soukromí (například Kalifornie, Virginie, Colorado, Connecticut nebo Utah),
@@ -106,52 +141,12 @@ Odinstalováním hry se smažou data uložená v zařízení (zálohy v Google �
 <h2>Děti</h2>
 <p>Hra není určená dětem mladším 13 let.</p>
 
-<h2>Kontakt</h2>
-<p>E-mail: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
+<h2>Správce a kontakt</h2>
+<p>Správcem osobních údajů je Martin Gofroj, soukromá osoba, Česká republika.<br>
+E-mail: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
 
 <hr>
 
-<h1>VAMPIRES! – Privacy Policy</h1>
-<p class="muted">Effective November 2, 2026 · Developer: Martin Gofroj</p>
-<p>The game requires no sign-up or login and does not itself collect your real name, e-mail, location or contacts (for data processed by Google's ad service, see Ads below).
-For online leaderboards and friends, it sends to the server: a <b>random player ID</b> and secret key generated on first launch,
-the <b>nickname</b> you choose, your <b>game results</b> (score, run length, kills, character, time played), your <b>invite code</b> and inviter,
-your <b>friends, challenges and messages</b> (only pre-written challenge messages, no free text), the <b>reports and blocks</b> you make
-(only the game admin sees reports; the reported player is not told),
-and – only if you allow notifications – a <b>notification token</b> (a random identifier of the app on your phone) used solely to deliver friend challenge
-notifications via <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a> (stored with the game's language so they arrive in your language); it is deleted when you uninstall the game.
-The server also remembers when the game was last online and shows other players on leaderboards and friend lists whether you are online right now.
-From completed runs the server also calculates your player level (experience) and totals your nights survived and time played, which are shown on your portrait and player card.
-Nicknames and results are publicly visible on leaderboards, so do not use your real name as a nickname. Game progress and settings are stored on your device;
-if you are signed in to <a href="https://policies.google.com/privacy">Google Play Games</a>, the game also backs up your progress to Saved Games in your Google account
-so it can be restored after reinstalling or on a new phone. Game data may also be included in Android's system backup if you have it turned on.
-Both backups are managed by Google; we have no access to your Google account.</p>
-<p>Online data is stored with <a href="https://supabase.com/privacy">Supabase</a> and transferred over HTTPS. It is never sold or shared and is not used for advertising or tracking.</p>
-<p><b>Gameplay statistics:</b> to learn where the game is too hard and what players enjoy, the game sends anonymous gameplay statistics
-to <a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a> – for example run start and end, chosen upgrades,
-in-game currency purchases, rewarded ads watched and screens opened – together with device information (model, OS and game version,
-country derived from IP address) and a random app instance ID. Statistics are not linked to your nickname or player ID, do not use the
-advertising ID and are not linked to advertising. In the EEA, UK and Switzerland they are sent only with your consent (the same dialog as for ads;
-change it in Settings → Privacy). Google keeps them for at most 14 months.</p>
-<p><b>Ads:</b> the game offers optional rewarded ads that play only when you tap them. Ads are served by
-<a href="https://policies.google.com/technologies/ads">Google AdMob</a>, which may process your device's advertising ID,
-IP address and approximate location derived from it, device information, ad interactions and diagnostics to show and measure ads,
-prevent fraud and, with your consent, personalize ads – see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>
-and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>.
-In the EEA, UK and Switzerland the game asks for your consent on first launch; you can change it anytime in Settings → Privacy,
-and reset or delete your advertising ID in your phone settings. This version does not process payments.</p>
-<p><b>US state privacy rights:</b> if you live in a US state with a consumer privacy law (such as California, Virginia, Colorado,
-Connecticut or Utah), you have these additional rights. <b>Opt out of targeted advertising and the “sale” or “sharing” of personal information:</b>
-we do not sell personal information for money, but Google AdMob may use your advertising ID and device information for targeted ads,
-which some state laws treat as sharing. You can opt out in the game under Settings → Privacy, or by turning off ad personalization
-in your phone settings. <b>Know, correct and delete:</b> e-mail us at the address below and we will respond within 45 days.
-<b>No discrimination:</b> the game works the same if you exercise these rights. Categories collected: identifiers (random player ID, app instance ID,
-advertising ID), nickname, in-game activity (including gameplay statistics) and ad interactions, approximate location derived from IP address, and diagnostics,
-for the purposes and recipients described above.</p>
-<p>To delete your online account with all online data (nickname, results, level, friends, challenges, messages, reports and blocks), use
-Settings → <b>Delete online account</b> in the game – it is deleted immediately and permanently. Without the game, e-mail us your nickname and
-invite code (from Friends); we delete it within 30 days. Details: <a href="smazani.html">Account deletion</a> · <a href="pravidla.html">Community Rules</a>.
-Uninstalling the game deletes data stored on the device (backups in your Google account can be deleted in your Google settings). The game is not directed at children under 13.</p>
-<p>Contact: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
+<p lang="en">English version: <a href="en/" hreflang="en">VAMPIRES! – Privacy Policy</a></p>
 </body>
 </html>

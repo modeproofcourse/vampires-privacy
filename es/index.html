@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <b aria-current="page" lang="es-419">Español</b> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Política de privacidad</h1>
-<p class="muted">Vigente desde el 2 de noviembre de 2026 · Desarrollador: Martin Gofroj</p>
+<p class="muted">Vigente desde el 6 de noviembre de 2026 · Desarrollador: Martin Gofroj</p>
 
 <h2>Qué datos procesa el juego</h2>
 <p>El juego no requiere registro ni inicio de sesión, y por sí mismo no recopila tu nombre, correo electrónico, ubicación ni contactos
@@ -45,7 +45,8 @@ Para que funcionen las clasificaciones en línea y los amigos, envía al servido
 	<li><b>reportes y bloqueos</b>: a quién reportas y por qué, y a quién bloqueas. Solo quien administra el juego ve los reportes; la persona reportada no recibe ningún aviso,</li>
 	<li><b>un token de notificaciones</b> (solo si permites las notificaciones): un identificador aleatorio de la aplicación en tu teléfono que sirve para avisarte de los desafíos de tus amigos.
 	Las notificaciones se entregan a través de <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; el token se usa solo para esto,
-	se guarda junto con el idioma del juego para que las notificaciones te lleguen en tu idioma y se elimina cuando desinstalas el juego.</li>
+	se guarda junto con el idioma del juego para que las notificaciones te lleguen en tu idioma. Se borra cuando eliminas tu cuenta en línea; si desinstalas el juego,
+	el token puede dejar de ser válido posteriormente y lo quitaremos del servidor cuando el servicio nos informe de su invalidez.</li>
 </ul>
 <p>El servidor también registra la última vez que el juego estuvo en línea y lo usa para mostrar a los demás jugadores, en la clasificación y en sus listas de amigos, si estás jugando en este momento.
 Con las partidas terminadas, el servidor calcula tu nivel de jugador (experiencia) y contabiliza las noches sobrevividas y el tiempo jugado; estos datos se muestran junto a tu retrato y en tu tarjeta de jugador.
@@ -56,15 +57,18 @@ para que puedas recuperarlo si reinstalas el juego o cambias de teléfono. Los d
 (si la tienes activada en tu teléfono). Google administra ambas copias de seguridad; nosotros no tenemos acceso a tu cuenta de Google.</p>
 
 <h2>Dónde se guardan los datos</h2>
-<p>Los datos en línea se guardan en una base de datos del servicio <a href="https://supabase.com/privacy">Supabase</a>. La conexión está cifrada (HTTPS).
-Estos datos nunca se venden ni se ceden a nadie, y no se usan para publicidad ni para rastreo.</p>
+<p>Los datos en línea se guardan en una base de datos del servicio <a href="https://supabase.com/privacy">Supabase</a> en la Unión Europea (Irlanda).
+La conexión está cifrada (HTTPS). No vendemos los datos en línea ni los usamos para publicidad o rastreo. Supabase y sus subencargados los procesan para almacenarlos.</p>
+<p>Supabase presta sus servicios principalmente a través de una empresa con sede en Singapur y una filial en Estados Unidos; Google presta servicios de estadísticas, notificaciones, anuncios y Google Play Juegos. Por eso, algunos datos también pueden tratarse fuera del EEE, especialmente en Singapur y Estados Unidos.
+Según el servicio, las transferencias a países sin un nivel adecuado de protección de datos se basan en las cláusulas contractuales tipo de la Comisión Europea. Las transferencias a Google LLC en Estados Unidos también pueden ampararse en el
+Marco de Privacidad de Datos UE-EE. UU. (EU-U.S. Data Privacy Framework). Puedes escribirnos al correo electrónico de contacto para conocer las garantías aplicables y cómo obtener una copia.</p>
 
 <h2>Estadísticas de juego</h2>
-<p>Para saber en qué partes el juego es demasiado difícil y qué es lo que más les gusta a los jugadores, el juego envía estadísticas de juego anónimas a
+<p>Para saber en qué partes el juego es demasiado difícil y qué es lo que más les gusta a los jugadores, el juego envía estadísticas de juego a
 <a href="https://firebase.google.com/support/privacy">Google Analytics para Firebase</a>: por ejemplo, el inicio y el final de una partida,
 las mejoras elegidas, las compras con moneda del juego, los anuncios con recompensa vistos y las pantallas abiertas, junto con información del dispositivo
 (modelo, versión del sistema y del juego, país obtenido a partir de la dirección IP) y un ID aleatorio de instancia de la aplicación. Las estadísticas no se vinculan
-con tu apodo ni con tu ID de jugador, no usan el ID de publicidad y no se relacionan con los anuncios. En el Espacio Económico Europeo,
+con tu apodo ni con tu ID de jugador (solo se asocian al ID aleatorio de instancia de la aplicación), no usan el ID de publicidad y no se relacionan con los anuncios. En el Espacio Económico Europeo,
 el Reino Unido y Suiza, solo se envían con tu consentimiento (se pide en la misma ventana que el de los anuncios; puedes cambiarlo
 en Configuración → Privacidad). Google las conserva durante un máximo de 14 meses.</p>
 
@@ -78,7 +82,35 @@ Para más información, consulta la <a href="https://policies.google.com/privacy
 y <a href="https://policies.google.com/technologies/partner-sites">cómo usa Google la información de los sitios o las aplicaciones que utilizan sus servicios</a>.</p>
 <p>En el Espacio Económico Europeo, el Reino Unido y Suiza, el juego te pide tu consentimiento la primera vez que lo abres.
 Puedes cambiar tu elección en cualquier momento en el juego, en Configuración → Privacidad. También puedes restablecer o borrar tu ID de publicidad
-en la configuración de tu teléfono (Google → Anuncios).</p>
+en la configuración de tu teléfono, en la sección Anuncios (según tu versión de Android, la encontrarás en Privacidad o en Google).</p>
+
+<h2>Por qué procesamos los datos</h2>
+<ul>
+	<li><b>Funciones en línea</b> (ID de jugador, apodo, resultados, nivel, clasificaciones, amigos, desafíos y mensajes): para ofrecerte
+	las funciones del juego que usas (ejecución de un contrato, art. 6.1.b) del RGPD). Las clasificaciones, los amigos y los desafíos no pueden funcionar sin los datos necesarios para la cuenta en línea.</li>
+	<li><b>Reportes, bloqueos, verificación de apodos y protección contra trampas</b>: nuestro interés legítimo en que el juego sea seguro y justo
+	(art. 6.1.f) del RGPD).</li>
+	<li><b>Notificaciones</b>: tu consentimiento para recibirlas y para el tratamiento del token correspondiente (art. 6.1.a) del RGPD); puedes retirar ese consentimiento desactivando las notificaciones en tu teléfono.</li>
+	<li><b>Estadísticas de juego y anuncios personalizados</b>: tu consentimiento (art. 6.1.a) del RGPD), que puedes cambiar en cualquier momento
+	en Configuración → Privacidad. Anuncios no personalizados y prevención del fraude: nuestro interés legítimo en financiar y proteger el juego (art. 6.1.f) del RGPD), cuando el tratamiento no requiera consentimiento. Si se necesita consentimiento para acceder a información de tu dispositivo, te lo pedimos. Los anuncios solo se reproducen cuando los tocas.</li>
+</ul>
+
+<h2>Cuánto tiempo conservamos los datos</h2>
+<ul>
+	<li>Cuenta en línea (apodo, resultados, nivel, amigos, bloqueos): hasta que elimines la cuenta
+	(o hasta que el juego deje de ofrecer sus servicios en línea). También eliminamos antes el token de notificaciones si FCM informa que ya no es válido.</li>
+	<li>Desafíos y mensajes: desafíos completados, 90 días; todos los demás, 14 días.</li>
+	<li>Reportes: 12 meses desde el último reporte.</li>
+	<li>Estadísticas de juego: un máximo de 14 meses en Google.</li>
+</ul>
+
+<h2>Tus derechos</h2>
+<p>Tienes derecho a acceder a tus datos, a que se corrijan o se eliminen, a que se limite su tratamiento, a la portabilidad de los datos y a oponerte
+al tratamiento basado en el interés legítimo. Puedes retirar tu consentimiento en cualquier momento (en Configuración → Privacidad o desactivando
+las notificaciones); esto no afecta el tratamiento realizado antes. Para ejercer tus derechos, escríbenos a la dirección de correo que aparece más abajo e incluye
+tu apodo y el código de invitación que ves en Amigos para que podamos encontrar tus datos. Te responderemos en un plazo de un mes.</p>
+<p>Si crees que no manejamos bien tus datos, puedes presentar una queja ante la autoridad checa de protección de datos
+(<a href="https://uoou.gov.cz/en">Úřad pro ochranu osobních údajů</a>) o ante la autoridad de protección de datos de tu país.</p>
 
 <h2>Si vives en Estados Unidos</h2>
 <p>Si vives en un estado de EE. UU. que tiene una ley de privacidad del consumidor (por ejemplo, California, Virginia, Colorado, Connecticut o Utah),
@@ -106,8 +138,9 @@ Al desinstalar el juego se borran los datos guardados en el dispositivo (las cop
 <h2>Menores de edad</h2>
 <p>El juego no está dirigido a menores de 13 años.</p>
 
-<h2>Contacto</h2>
-<p>Correo electrónico: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
+<h2>Responsable y contacto</h2>
+<p>El responsable del tratamiento de los datos personales es Martin Gofroj, persona física, República Checa.<br>
+Correo electrónico: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
 <p class="muted">Esta es una traducción del original en checo. Si las versiones difieren, prevalece la versión en checo.</p>
 </body>
 </html>

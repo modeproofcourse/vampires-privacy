@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <b aria-current="page" lang="en">English</b> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Privacy Policy</h1>
-<p class="muted">Effective November 2, 2026 · Developer: Martin Gofroj</p>
+<p class="muted">Effective November 6, 2026 · Developer: Martin Gofroj</p>
 
 <h2>What the game processes</h2>
 <p>The game requires no sign-up or login and does not itself collect your name, e-mail, location or contacts
@@ -45,7 +45,8 @@ For online leaderboards and friends to work, it sends the following data to the 
 	<li><b>reports and blocks</b>: whom you report and why, and whom you block. Only the game admin sees reports; the reported player is not told about them,</li>
 	<li><b>a notification token</b> (only if you allow notifications): a random identifier of the app on your phone used to send you notifications about friends' challenges.
 	Notifications are delivered by <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; the token is used only for this,
-	together with the game's language so that notifications arrive in your language, and it is deleted when you uninstall the game.</li>
+	together with the game's language so that notifications arrive in your language. It is deleted when you delete your online account; if you uninstall the game,
+	the token may subsequently become invalid, and we remove it from the server once the service reports that it is no longer valid.</li>
 </ul>
 <p>The server also remembers when the game was last online and uses it to show other players on the leaderboard and in friend lists whether you are in the game right now.
 From completed runs, the server calculates your player level (experience) and totals your nights survived and time played; these are shown next to your portrait and on your player card.
@@ -56,15 +57,18 @@ so that it can be restored after reinstalling or on a new phone. Game data may a
 (if you have it turned on on your phone). Both backups are managed by Google; we have no access to your Google account.</p>
 
 <h2>Where the data is stored</h2>
-<p>Online data is stored in a database of the <a href="https://supabase.com/privacy">Supabase</a> service. The connection is encrypted (HTTPS).
-This data is never sold or passed on to anyone and is not used for advertising or tracking.</p>
+<p>Online data is stored in a database of the <a href="https://supabase.com/privacy">Supabase</a> service in the European Union (Ireland).
+The connection is encrypted (HTTPS). We do not sell online data or use it for advertising or tracking. Supabase and its subprocessors process it to provide data storage.</p>
+<p>Supabase primarily provides its services through a Singapore-based company with a US affiliate; Google provides analytics, notifications, ads and Google Play Games. Some data may therefore also be processed outside the EEA, particularly in Singapore and the USA.
+Depending on the service, transfers to countries without an adequate level of data protection rely on the European Commission's Standard Contractual Clauses. Transfers to Google LLC in the USA may also rely on the
+EU-U.S. Data Privacy Framework. You can contact us at the e-mail address below for information on the safeguards used and how to obtain a copy.</p>
 
 <h2>Gameplay statistics</h2>
-<p>To learn where the game is too hard and what players enjoy, the game sends anonymous gameplay statistics to
+<p>To learn where the game is too hard and what players enjoy, the game sends gameplay statistics to
 <a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a>: for example the start and end of a run,
 chosen upgrades, purchases with in-game currency, rewarded ads watched and screens opened, together with device information
 (model, system and game version, country derived from the IP address) and a random app instance ID. The statistics are not linked
-to your nickname or player ID, do not use the advertising ID and are not linked to ads. In the European Economic Area,
+to your nickname or player ID (they are tied only to the random app instance ID), do not use the advertising ID and are not linked to ads. In the European Economic Area,
 the United Kingdom and Switzerland they are sent only with your consent (in the same dialog as for ads; you can change it
 in Settings → Privacy). Google keeps them for at most 14 months.</p>
 
@@ -78,7 +82,35 @@ For details see <a href="https://policies.google.com/privacy">Google's Privacy P
 and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites or apps that use its services</a>.</p>
 <p>In the European Economic Area, the United Kingdom and Switzerland the game asks for your consent on first launch.
 You can change your choice at any time in the game in Settings → Privacy. You can also reset or delete your advertising ID
-in your phone settings (Google → Ads).</p>
+in your phone settings under Ads (depending on your Android version, you will find it under Privacy or under Google).</p>
+
+<h2>Why we process data</h2>
+<ul>
+	<li><b>Online features</b> (player ID, nickname, results, level, leaderboards, friends, challenges and messages): to provide you with
+	the game features you use (performance of a contract, Art. 6(1)(b) GDPR). Leaderboards, friends and challenges cannot work without the data needed for an online account.</li>
+	<li><b>Reports, blocks, nickname checks and protection against cheating</b>: our legitimate interest in a safe and fair game
+	(Art. 6(1)(f) GDPR).</li>
+	<li><b>Notifications</b>: your consent to receiving them and to the related processing of the token (Art. 6(1)(a) GDPR); you can withdraw this consent by turning off notifications on your phone.</li>
+	<li><b>Gameplay statistics and personalized ads</b>: your consent (Art. 6(1)(a) GDPR), which you can change at any time
+	in Settings → Privacy. Non-personalized ads and fraud prevention: our legitimate interest in funding and protecting the game (Art. 6(1)(f) GDPR), where the processing does not require consent. Where consent is needed to access information on your device, we ask for it. Ads play only when you tap them.</li>
+</ul>
+
+<h2>How long we keep data</h2>
+<ul>
+	<li>Online account (nickname, results, level, friends, blocks): until you delete the account
+	(or until the game ends its online services). We also remove a notification token earlier if FCM reports that it is invalid.</li>
+	<li>Challenges and messages: completed challenges 90 days; all others 14 days.</li>
+	<li>Reports: 12 months from the latest report.</li>
+	<li>Gameplay statistics: at most 14 months at Google.</li>
+</ul>
+
+<h2>Your rights</h2>
+<p>You have the right to access your data, to have it corrected or erased, to restrict its processing, to data portability, and to object
+to processing based on legitimate interest. You can withdraw your consent at any time (in Settings → Privacy or by turning off
+notifications); this does not affect processing that took place before. To exercise your rights, e-mail us at the address below – include
+your nickname and the invite code from Friends so that we can find your data. We will respond within one month.</p>
+<p>If you believe we are mishandling your data, you can lodge a complaint with the Czech data protection authority
+(<a href="https://uoou.gov.cz/en">Office for Personal Data Protection</a>) or with the data protection authority in your country.</p>
 
 <h2>Players in the USA</h2>
 <p>If you live in a US state with a consumer privacy law (for example California, Virginia, Colorado, Connecticut or Utah),
@@ -106,8 +138,9 @@ Uninstalling the game deletes the data stored on the device (backups in your Goo
 <h2>Children</h2>
 <p>The game is not intended for children under 13.</p>
 
-<h2>Contact</h2>
-<p>E-mail: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
+<h2>Controller and contact</h2>
+<p>The controller of personal data is Martin Gofroj, a private individual, Czech Republic.<br>
+E-mail: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
 <p class="muted">This is a translation of the Czech original. If the versions differ, the Czech version applies.</p>
 </body>
 </html>

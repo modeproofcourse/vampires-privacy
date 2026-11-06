@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <b aria-current="page" lang="de">Deutsch</b> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Datenschutzerklärung</h1>
-<p class="muted">Gültig ab 2. November 2026 · Entwickler: Martin Gofroj</p>
+<p class="muted">Gültig ab 6. November 2026 · Entwickler: Martin Gofroj</p>
 
 <h2>Welche Daten das Spiel verarbeitet</h2>
 <p>Das Spiel braucht keine Registrierung und keine Anmeldung und erfasst selbst weder deinen Namen noch deine E-Mail-Adresse, deinen Standort oder deine Kontakte
@@ -45,7 +45,8 @@ Damit Online-Ranglisten und Freunde funktionieren, sendet es folgende Daten an d
 	<li><b>Meldungen und Blockierungen</b>: wen du meldest und warum und wen du blockierst. Meldungen sieht nur die Spielleitung; die gemeldete Person erfährt nichts davon,</li>
 	<li><b>ein Benachrichtigungstoken</b> (nur wenn du Benachrichtigungen erlaubst): eine zufällige Kennung der App auf deinem Handy, über die du Benachrichtigungen zu Duellen von Freunden bekommst.
 	Die Benachrichtigungen stellt <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a> zu. Das Token wird nur dafür verwendet und
-	zusammen mit der Spielsprache gespeichert, damit Benachrichtigungen in deiner Sprache ankommen; es wird gelöscht, wenn du das Spiel deinstallierst.</li>
+	zusammen mit der Spielsprache gespeichert, damit Benachrichtigungen in deiner Sprache ankommen. Es wird gelöscht, wenn du dein Online-Konto löschst; wenn du das Spiel deinstallierst,
+	kann das Token anschließend ungültig werden. Wir entfernen es vom Server, sobald der Dienst uns die Ungültigkeit meldet.</li>
 </ul>
 <p>Der Server merkt sich außerdem, wann das Spiel zuletzt online war, und zeigt anderen Spielern danach in der Rangliste und in Freundeslisten an, ob du gerade im Spiel bist.
 Aus abgeschlossenen Runden ermittelt der Server dein Spielerlevel (Erfahrung) und zählt deine überlebten Nächte und deine Spielzeit zusammen; diese Werte sind neben deinem Porträt und auf deiner Spielerkarte zu sehen.
@@ -56,15 +57,18 @@ damit er sich nach einer Neuinstallation oder auf einem neuen Handy wiederherste
 (wenn du sie auf deinem Handy eingeschaltet hast). Beide Sicherungen verwaltet Google; wir haben keinen Zugriff auf dein Google-Konto.</p>
 
 <h2>Wo die Daten gespeichert werden</h2>
-<p>Online-Daten werden in einer Datenbank des Dienstes <a href="https://supabase.com/privacy">Supabase</a> gespeichert. Die Verbindung ist verschlüsselt (HTTPS).
-Diese Daten werden niemals verkauft oder an Dritte weitergegeben und nicht für Werbung oder Tracking verwendet.</p>
+<p>Online-Daten werden in einer Datenbank des Dienstes <a href="https://supabase.com/privacy">Supabase</a> in der Europäischen Union (Irland) gespeichert.
+Die Verbindung ist verschlüsselt (HTTPS). Wir verkaufen Online-Daten nicht und nutzen sie weder für Werbung noch für Tracking. Supabase und seine Unterauftragsverarbeiter verarbeiten sie zur Datenspeicherung.</p>
+<p>Supabase erbringt seine Dienste hauptsächlich über ein Unternehmen mit Sitz in Singapur und eine US-Tochtergesellschaft; Google bietet Spielstatistiken, Benachrichtigungen, Werbung und Google Play Spiele an. Einige Daten können daher auch außerhalb des EWR verarbeitet werden, insbesondere in Singapur und den USA.
+Je nach Dienst beruhen Übermittlungen in Länder ohne angemessenes Datenschutzniveau auf den Standardvertragsklauseln der Europäischen Kommission. Übermittlungen an Google LLC in den USA können außerdem auf dem
+EU-US-Datenschutzrahmen (EU-U.S. Data Privacy Framework) beruhen. Informationen zu den angewandten Garantien und zur Möglichkeit, eine Kopie zu erhalten, bekommst du über unsere Kontakt-E-Mail-Adresse.</p>
 
 <h2>Spielstatistiken</h2>
-<p>Damit wir erfahren, wo das Spiel zu schwer ist und was Spielern Spaß macht, sendet das Spiel anonyme Spielstatistiken an
+<p>Damit wir erfahren, wo das Spiel zu schwer ist und was Spielern Spaß macht, sendet das Spiel Spielstatistiken an
 <a href="https://firebase.google.com/support/privacy">Google Analytics für Firebase</a>: zum Beispiel Beginn und Ende einer Runde,
 gewählte Upgrades, Käufe mit Spielwährung, angesehene Werbung mit Belohnung und aufgerufene Bildschirme, zusammen mit Geräteinformationen
 (Modell, System- und Spielversion, aus der IP-Adresse abgeleitetes Land) und einer zufälligen App-Instanz-ID. Die Statistiken sind weder mit deinem
-Spielernamen noch mit deiner Spieler-ID verknüpft, verwenden nicht die Werbe-ID und werden nicht mit Werbung verknüpft. Im Europäischen Wirtschaftsraum,
+Spielernamen noch mit deiner Spieler-ID verknüpft (sie sind nur an die zufällige App-Instanz-ID gebunden), verwenden nicht die Werbe-ID und werden nicht mit Werbung verknüpft. Im Europäischen Wirtschaftsraum,
 im Vereinigten Königreich und in der Schweiz werden sie nur mit deiner Einwilligung gesendet (im selben Fenster wie für die Werbung; ändern kannst du sie
 unter Einstellungen → Datenschutz). Google bewahrt sie höchstens 14 Monate lang auf.</p>
 
@@ -78,7 +82,35 @@ Details findest du in der <a href="https://policies.google.com/privacy">Datensch
 und in der Erklärung, <a href="https://policies.google.com/technologies/partner-sites">wie Google Daten von Websites oder Apps nutzt, die Google-Dienste verwenden</a>.</p>
 <p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz fragt dich das Spiel beim ersten Start nach deiner Einwilligung.
 Deine Auswahl kannst du jederzeit im Spiel unter Einstellungen → Datenschutz ändern. Außerdem kannst du deine Werbe-ID
-in den Einstellungen deines Handys (Google → Anzeigen) zurücksetzen oder löschen.</p>
+in den Einstellungen deines Handys im Bereich „Anzeigen“ zurücksetzen oder löschen (je nach Android-Version findest du ihn unter „Datenschutz“ oder unter „Google“).</p>
+
+<h2>Warum wir Daten verarbeiten</h2>
+<ul>
+	<li><b>Online-Funktionen</b> (Spieler-ID, Spielername, Ergebnisse, Spielerlevel, Ranglisten, Freunde, Duelle und Nachrichten): damit wir dir
+	die Spielfunktionen bereitstellen können, die du nutzt (Vertragserfüllung, Art. 6 Abs. 1 lit. b DSGVO). Ohne die für das Online-Konto erforderlichen Daten funktionieren Ranglisten, Freunde und Duelle nicht.</li>
+	<li><b>Meldungen, Blockierungen, Prüfung von Spielernamen und Schutz vor Schummeln</b>: unser berechtigtes Interesse an einem sicheren und fairen Spiel
+	(Art. 6 Abs. 1 lit. f DSGVO).</li>
+	<li><b>Benachrichtigungen</b>: deine Einwilligung in ihren Empfang und die damit verbundene Verarbeitung des Tokens (Art. 6 Abs. 1 lit. a DSGVO); du kannst sie widerrufen, indem du Benachrichtigungen auf deinem Handy deaktivierst.</li>
+	<li><b>Spielstatistiken und personalisierte Werbung</b>: deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die du jederzeit
+	unter Einstellungen → Datenschutz ändern kannst. Nicht personalisierte Werbung und Betrugsprävention: unser berechtigtes Interesse an der Finanzierung und dem Schutz des Spiels (Art. 6 Abs. 1 lit. f DSGVO), soweit die Verarbeitung keine Einwilligung erfordert. Wo für den Zugriff auf Informationen auf deinem Gerät eine Einwilligung erforderlich ist, fragen wir dich danach. Werbung wird nur abgespielt, wenn du darauf tippst.</li>
+</ul>
+
+<h2>Wie lange wir Daten speichern</h2>
+<ul>
+	<li>Online-Konto (Spielername, Ergebnisse, Spielerlevel, Freunde, Blockierungen): bis du das Konto löschst
+	(oder bis das Spiel seine Online-Dienste einstellt). Ein Benachrichtigungstoken entfernen wir auch früher, wenn FCM es als ungültig meldet.</li>
+	<li>Duelle und Nachrichten: abgeschlossene Duelle 90 Tage, alle übrigen 14 Tage.</li>
+	<li>Meldungen: 12 Monate ab der letzten Meldung.</li>
+	<li>Spielstatistiken: bei Google höchstens 14 Monate.</li>
+</ul>
+
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft über deine Daten, auf ihre Berichtigung und Löschung, auf Einschränkung der Verarbeitung und auf Datenübertragbarkeit sowie das Recht,
+der Verarbeitung auf Grundlage unseres berechtigten Interesses zu widersprechen. Deine Einwilligung kannst du jederzeit widerrufen (unter Einstellungen → Datenschutz oder indem du
+Benachrichtigungen ausschaltest); der Widerruf gilt nur für die Zukunft. Um deine Rechte geltend zu machen, schreib uns an die E-Mail-Adresse unten – gib deinen Spielernamen
+und deinen Einladungscode (Freunde → Dein Code) an, damit wir deine Daten finden. Wir antworten innerhalb eines Monats.</p>
+<p>Wenn du meinst, dass wir mit deinen Daten nicht richtig umgehen, kannst du bei der tschechischen Datenschutzbehörde
+(<a href="https://uoou.gov.cz/en">Úřad pro ochranu osobních údajů</a>) oder bei der Datenschutz-Aufsichtsbehörde in deinem Land Beschwerde einlegen.</p>
 
 <h2>Datenschutzrechte in den USA</h2>
 <p>Wenn du in einem US-Bundesstaat mit einem Verbraucherdatenschutzgesetz lebst (zum Beispiel Kalifornien, Virginia, Colorado, Connecticut oder Utah),
@@ -106,8 +138,9 @@ Beim Deinstallieren des Spiels werden die auf dem Gerät gespeicherten Daten gel
 <h2>Kinder</h2>
 <p>Das Spiel ist nicht für Kinder unter 13 Jahren bestimmt.</p>
 
-<h2>Kontakt</h2>
-<p>E-Mail: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
+<h2>Verantwortlicher und Kontakt</h2>
+<p>Verantwortlicher für die Verarbeitung personenbezogener Daten ist Martin Gofroj, Privatperson, Tschechische Republik.<br>
+E-Mail: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
 <p class="muted">Dies ist eine Übersetzung des tschechischen Originals. Bei Abweichungen gilt die tschechische Fassung.</p>
 </body>
 </html>

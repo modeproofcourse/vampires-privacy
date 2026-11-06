@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <b aria-current="page" lang="fr">Français</b></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Politique de confidentialité</h1>
-<p class="muted">En vigueur à partir du 2 novembre 2026 · Développeur&nbsp;: Martin Gofroj</p>
+<p class="muted">En vigueur à partir du 6 novembre 2026 · Développeur&nbsp;: Martin Gofroj</p>
 
 <h2>Données traitées par le jeu</h2>
 <p>Le jeu ne demande ni inscription ni connexion et ne collecte pas lui-même ton nom, ton e-mail, ta position ni tes contacts
@@ -45,7 +45,8 @@ Pour que les classements en ligne et les amis fonctionnent, il envoie au serveur
 	<li><b>les signalements et blocages</b>&nbsp;: qui tu signales et pour quelle raison, et qui tu bloques. Seul l'administrateur du jeu voit les signalements&nbsp;; la personne signalée n'en est pas informée,</li>
 	<li><b>un jeton de notification</b> (seulement si tu autorises les notifications)&nbsp;: un identifiant aléatoire de l'application sur ton téléphone, qui sert à t'envoyer des notifications sur les défis de tes amis.
 	Les notifications sont envoyées via <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>&nbsp;; le jeton ne sert qu'à cela,
-	il est enregistré avec la langue du jeu pour que les notifications arrivent dans ta langue, et il est supprimé quand tu désinstalles le jeu.</li>
+	il est enregistré avec la langue du jeu pour que les notifications arrivent dans ta langue. Il est supprimé en même temps que ton compte en ligne&nbsp;; si tu désinstalles le jeu,
+	le jeton peut devenir invalide par la suite. Nous le supprimons du serveur dès que le service nous signale son invalidité.</li>
 </ul>
 <p>Le serveur enregistre aussi quand le jeu a été en ligne pour la dernière fois, ce qui permet d'indiquer aux autres joueurs, dans le classement et dans leurs listes d'amis, si tu es en jeu en ce moment.
 À partir des parties terminées, le serveur calcule ton niveau de compte (expérience), le nombre de nuits auxquelles tu as survécu et ton temps de jeu&nbsp;; ils s'affichent à côté de ton portrait et sur ta carte de joueur.
@@ -56,15 +57,18 @@ pour pouvoir la restaurer après une réinstallation ou sur un nouveau télépho
 (si elle est activée sur ton téléphone). Ces deux sauvegardes sont gérées par Google&nbsp;; nous n'avons pas accès à ton compte Google.</p>
 
 <h2>Où sont stockées les données</h2>
-<p>Les données en ligne sont stockées dans une base de données du service <a href="https://supabase.com/privacy">Supabase</a>. La connexion est chiffrée (HTTPS).
-Ces données ne sont jamais vendues ni transmises à qui que ce soit, et elles ne sont pas utilisées à des fins publicitaires ni de suivi.</p>
+<p>Les données en ligne sont stockées dans une base de données du service <a href="https://supabase.com/privacy">Supabase</a> dans l'Union européenne (Irlande).
+La connexion est chiffrée (HTTPS). Nous ne vendons pas les données en ligne et ne les utilisons ni pour la publicité ni pour le suivi. Supabase et ses sous-traitants ultérieurs les traitent pour assurer leur stockage.</p>
+<p>Supabase fournit principalement ses services par l'intermédiaire d'une société établie à Singapour et d'une société affiliée aux États-Unis&nbsp;; Google fournit les statistiques, les notifications, les publicités et Google Play Jeux. Certaines données peuvent donc aussi être traitées hors de l'EEE, notamment à Singapour et aux États-Unis.
+Selon le service, les transferts vers des pays ne bénéficiant pas d'un niveau de protection adéquat reposent sur les clauses contractuelles types de la Commission européenne. Les transferts à Google LLC aux États-Unis peuvent également reposer sur le
+cadre de protection des données UE–États-Unis (EU-U.S. Data Privacy Framework). Tu peux nous écrire à l'adresse e-mail indiquée ci-dessous pour connaître les garanties applicables et les modalités d'obtention d'une copie.</p>
 
 <h2>Statistiques de jeu</h2>
-<p>Pour savoir où le jeu est trop difficile et ce qui plaît aux joueurs, le jeu envoie des statistiques de jeu anonymes à
+<p>Pour savoir où le jeu est trop difficile et ce qui plaît aux joueurs, le jeu envoie des statistiques de jeu à
 <a href="https://firebase.google.com/support/privacy">Google Analytics pour Firebase</a>&nbsp;: par exemple le début et la fin d'une partie,
 les améliorations choisies, les achats avec la monnaie du jeu, les publicités avec récompense regardées et les écrans ouverts, ainsi que des informations sur l'appareil
 (modèle, version du système et du jeu, pays déduit de l'adresse IP) et un identifiant aléatoire d'instance d'application. Les statistiques ne sont liées
-ni à ton pseudo ni à ton identifiant de joueur, n'utilisent pas l'identifiant publicitaire et ne sont pas associées aux publicités. Dans l'Espace économique européen,
+ni à ton pseudo ni à ton identifiant de joueur (elles ne sont rattachées qu'à l'identifiant aléatoire d'instance d'application), n'utilisent pas l'identifiant publicitaire et ne sont pas associées aux publicités. Dans l'Espace économique européen,
 au Royaume-Uni et en Suisse, elles ne sont envoyées qu'avec ton consentement (demandé dans la même fenêtre que pour les publicités&nbsp;; tu peux le modifier
 dans Paramètres → Confidentialité). Google les conserve au maximum 14&nbsp;mois.</p>
 
@@ -78,7 +82,35 @@ Pour en savoir plus, consulte les <a href="https://policies.google.com/privacy">
 et la page <a href="https://policies.google.com/technologies/partner-sites">Comment Google utilise les informations des sites ou applications qui utilisent ses services</a>.</p>
 <p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, le jeu te demande ton consentement au premier lancement.
 Tu peux modifier ton choix à tout moment dans le jeu, dans Paramètres → Confidentialité. Tu peux aussi réinitialiser ou supprimer ton identifiant publicitaire
-dans les paramètres de ton téléphone (Google → Annonces).</p>
+dans la rubrique Annonces des paramètres de ton téléphone (selon ta version d'Android, elle se trouve sous Confidentialité ou sous Google).</p>
+
+<h2>Pourquoi nous traitons les données</h2>
+<ul>
+	<li><b>Fonctions en ligne</b> (identifiant de joueur, pseudo, résultats, niveau, classements, amis, défis et messages)&nbsp;: pour te fournir
+	les fonctions du jeu que tu utilises (exécution d'un contrat, art. 6, paragraphe 1, point b), du RGPD). Sans les données nécessaires au compte en ligne, les classements, les amis et les défis ne peuvent pas fonctionner.</li>
+	<li><b>Signalements, blocages, contrôle des pseudos et protection contre la triche</b>&nbsp;: notre intérêt légitime à assurer un jeu sûr et équitable
+	(art. 6, paragraphe 1, point f), du RGPD).</li>
+	<li><b>Notifications</b>&nbsp;: ton consentement à leur réception et au traitement du jeton associé (art. 6, paragraphe 1, point a), du RGPD)&nbsp;; tu peux retirer ce consentement en désactivant les notifications sur ton téléphone.</li>
+	<li><b>Statistiques de jeu et publicités personnalisées</b>&nbsp;: ton consentement (art. 6, paragraphe 1, point a), du RGPD), que tu peux modifier à tout moment
+	dans Paramètres → Confidentialité. Publicités non personnalisées et prévention de la fraude&nbsp;: notre intérêt légitime à financer et protéger le jeu (art. 6, paragraphe 1, point f), du RGPD), lorsque le traitement ne nécessite pas de consentement. Lorsque l'accès aux informations sur ton appareil exige un consentement, nous te le demandons. Les publicités ne se lancent que si tu les touches.</li>
+</ul>
+
+<h2>Combien de temps nous conservons les données</h2>
+<ul>
+	<li>Compte en ligne (pseudo, résultats, niveau, amis, blocages)&nbsp;: jusqu'à ce que tu supprimes le compte
+	(ou jusqu'à ce que le jeu mette fin à ses services en ligne). Nous supprimons également le jeton de notification plus tôt si FCM le signale comme invalide.</li>
+	<li>Défis et messages&nbsp;: défis terminés, 90&nbsp;jours&nbsp;; tous les autres, 14&nbsp;jours.</li>
+	<li>Signalements&nbsp;: 12&nbsp;mois à compter du dernier signalement.</li>
+	<li>Statistiques de jeu&nbsp;: au maximum 14&nbsp;mois chez Google.</li>
+</ul>
+
+<h2>Tes droits</h2>
+<p>Tu disposes des droits d'accès, de rectification et d'effacement de tes données, du droit à la limitation du traitement, du droit à la portabilité des données
+et du droit d'opposition au traitement fondé sur notre intérêt légitime. Tu peux retirer ton consentement à tout moment (dans Paramètres → Confidentialité ou en désactivant
+les notifications)&nbsp;; cela n'affecte pas les traitements effectués auparavant. Pour exercer tes droits, écris-nous à l'adresse e-mail ci-dessous – indique
+ton pseudo et le code d'invitation affiché dans Amis pour que nous puissions retrouver tes données. Nous te répondrons sous un mois.</p>
+<p>Si tu estimes que nous ne traitons pas correctement tes données, tu peux introduire une réclamation auprès de l'autorité tchèque de protection des données
+(<a href="https://uoou.gov.cz/en">Úřad pro ochranu osobních údajů</a>) ou auprès de l'autorité de protection des données de ton pays.</p>
 
 <h2>Joueurs aux États-Unis</h2>
 <p>Si tu vis dans un État américain doté d'une loi sur la protection des données des consommateurs (par exemple la Californie, la Virginie, le Colorado, le Connecticut ou l'Utah),
@@ -106,8 +138,9 @@ Désinstaller le jeu supprime les données enregistrées sur l'appareil (les sau
 <h2>Enfants</h2>
 <p>Le jeu n'est pas destiné aux enfants de moins de 13&nbsp;ans.</p>
 
-<h2>Contact</h2>
-<p>E-mail&nbsp;: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
+<h2>Responsable du traitement et contact</h2>
+<p>Le responsable du traitement des données personnelles est Martin Gofroj, personne physique, République tchèque.<br>
+E-mail&nbsp;: <a href="mailto:imthetruemartin@gmail.com">imthetruemartin@gmail.com</a></p>
 <p class="muted">Ceci est une traduction de l'original tchèque. En cas de divergence, la version tchèque fait foi.</p>
 </body>
 </html>
