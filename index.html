@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><b aria-current="page" lang="cs">Čeština</b> · <a href="en/" hreflang="en" lang="en">English</a> · <a href="pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="es/" hreflang="es-419" lang="es-419">Español</a> · <a href="de/" hreflang="de" lang="de">Deutsch</a> · <a href="fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Zásady ochrany osobních údajů</h1>
-<p class="muted">Platné od 9. 11. 2026 · Vývojář: Martin Gofroj</p>
+<p class="muted">Platné od 12.&nbsp;11.&nbsp;2026 · Vývojář: Martin Gofroj</p>
 
 <h2>Co hra zpracovává</h2>
 <p>Hra nevyžaduje registraci ani přihlášení a sama nesbírá jméno, e-mail, polohu ani kontakty
@@ -45,7 +45,7 @@ Aby fungovaly online žebříčky a přátelé, posílá na server tyto údaje:<
 	<li><b>nahlášení a blokování</b>: koho nahlašuješ a z jakého důvodu a koho blokuješ. Hlášení vidí jen správce hry, nahlášený hráč se o nich nedozví,</li>
 	<li><b>token pro upozornění</b> (jen když povolíš oznámení): náhodný identifikátor aplikace v telefonu, přes který ti přijde upozornění na výzvy přátel.
 	Upozornění doručuje služba <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; token se používá jen k tomu
-	(spolu s jazykem hry, aby ti upozornění přišla v tvém jazyce). Smaže se se smazáním online účtu; když hru odinstaluješ,
+	(spolu s jazykem hry, aby ti upozornění přišla v tvém jazyce). Smaže se se smazáním online účtu nebo když oznámení v&nbsp;telefonu vypneš; když hru odinstaluješ,
 	token časem přestane platit a ze serveru ho odstraníme, jakmile nám služba oznámí, že je neplatný.</li>
 </ul>
 <p>Server si také pamatuje, kdy byla hra naposledy online, a podle toho ukazuje ostatním hráčům v žebříčku a v seznamu přátel, jestli jsi právě ve hře.
@@ -111,6 +111,8 @@ v nastavení telefonu v části Reklamy (podle verze Androidu ji najdeš pod Sou
 	<li>Nahlášení: 12 měsíců od posledního nahlášení.</li>
 	<li>Statistiky hraní: u Googlu nejvýš 14 měsíců.</li>
 	<li>Nahlášení chyby: v e-mailu vývojáře nejvýš 12 měsíců.</li>
+	<li>Vyřazení za porušení pravidel: jednosměrný otisk ID hráče (nejde z&nbsp;něj zjistit, komu patřil), aby se vyřazený účet nemohl vrátit – i po smazání účtu, dokud hra provozuje online služby.</li>
+	<li>Provozní záznamy serveru a služby FormSubmit (včetně IP adresy spojení): jen krátce, mažou se samy.</li>
 </ul>
 
 <h2>Tvoje práva</h2>
@@ -136,7 +138,7 @@ přibližná poloha odvozená z IP adresy a diagnostické údaje. Účel a pří
 
 <h2>Platby</h2>
 <p>Nákupy ve hře vyřizuje <a href="https://policies.google.com/privacy">Google Play</a>. Platební údaje (kartu, adresu) vidí jen Google, hra ani vývojář je nedostanou.
-Hra dostane potvrzení nákupu (identifikátor nákupu a koupený produkt) a uloží si ho v zařízení, aby nákup připsala jen jednou.
+Hra dostane potvrzení nákupu (identifikátor nákupu a koupený produkt) a uloží si ho v zařízení (a v&nbsp;záloze postupu v&nbsp;Uložených hrách Google Play), aby nákup připsala jen jednou.
 Statistiky hraní mohou zaznamenat, který produkt byl koupen a za kolik, bez jakýchkoli platebních údajů.</p>
 
 <h2>Smazání údajů</h2>

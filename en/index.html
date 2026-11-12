@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <b aria-current="page" lang="en">English</b> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Privacy Policy</h1>
-<p class="muted">Effective November 9, 2026 · Developer: Martin Gofroj</p>
+<p class="muted">Effective November 12, 2026 · Developer: Martin Gofroj</p>
 
 <h2>What the game processes</h2>
 <p>The game requires no sign-up or login and does not itself collect your name, e-mail, location or contacts
@@ -45,7 +45,7 @@ For online leaderboards and friends to work, it sends the following data to the 
 	<li><b>reports and blocks</b>: whom you report and why, and whom you block. Only the game admin sees reports; the reported player is not told about them,</li>
 	<li><b>a notification token</b> (only if you allow notifications): a random identifier of the app on your phone used to send you notifications about friends' challenges.
 	Notifications are delivered by <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; the token is used only for this,
-	together with the game's language so that notifications arrive in your language. It is deleted when you delete your online account; if you uninstall the game,
+	together with the game's language so that notifications arrive in your language. It is deleted when you delete your online account or turn notifications off; if you uninstall the game,
 	the token may subsequently become invalid, and we remove it from the server once the service reports that it is no longer valid.</li>
 </ul>
 <p>The server also remembers when the game was last online and uses it to show other players on the leaderboard and in friend lists whether you are in the game right now.
@@ -108,6 +108,8 @@ in your phone settings under Ads (depending on your Android version, you will fi
 	<li>Reports: 12 months from the latest report.</li>
 	<li>Gameplay statistics: at most 14 months at Google.</li>
 	<li>Bug reports: in the developer's email for up to 12 months.</li>
+	<li>Bans for breaking the rules: a one-way fingerprint (hash) of the player ID, from which it cannot be determined whom it belonged to, so that a banned account cannot return – kept even after the account is deleted, for as long as the game runs its online services.</li>
+	<li>Operational logs of the server and of FormSubmit (including the connection's IP address): only briefly; they are deleted automatically.</li>
 </ul>
 
 <h2>Your rights</h2>
@@ -133,7 +135,7 @@ approximate location derived from the IP address, and diagnostic data. Purposes 
 
 <h2>Payments</h2>
 <p>In-game purchases are handled by <a href="https://policies.google.com/privacy">Google Play</a>. Only Google sees your payment details (card, address); neither the game nor the developer receives them.
-The game receives a purchase confirmation (purchase identifier and the product bought) and stores it on your device so that each purchase is credited only once.
+The game receives a purchase confirmation (purchase identifier and the product bought) and stores it on your device (and in the progress backup in Google Play Saved Games) so that each purchase is credited only once.
 Gameplay statistics may record which product was bought and at what price, without any payment details.</p>
 
 <h2>Deleting your data</h2>

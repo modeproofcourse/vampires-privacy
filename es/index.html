@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <b aria-current="page" lang="es-419">Español</b> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Política de privacidad</h1>
-<p class="muted">Vigente desde el 9 de noviembre de 2026 · Desarrollador: Martin Gofroj</p>
+<p class="muted">Vigente desde el 12 de noviembre de 2026 · Desarrollador: Martin Gofroj</p>
 
 <h2>Qué datos procesa el juego</h2>
 <p>El juego no requiere registro ni inicio de sesión, y por sí mismo no recopila tu nombre, correo electrónico, ubicación ni contactos
@@ -45,7 +45,7 @@ Para que funcionen las clasificaciones en línea y los amigos, envía al servido
 	<li><b>reportes y bloqueos</b>: a quién reportas y por qué, y a quién bloqueas. Solo quien administra el juego ve los reportes; la persona reportada no recibe ningún aviso,</li>
 	<li><b>un token de notificaciones</b> (solo si permites las notificaciones): un identificador aleatorio de la aplicación en tu teléfono que sirve para avisarte de los desafíos de tus amigos.
 	Las notificaciones se entregan a través de <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>; el token se usa solo para esto,
-	se guarda junto con el idioma del juego para que las notificaciones te lleguen en tu idioma. Se borra cuando eliminas tu cuenta en línea; si desinstalas el juego,
+	se guarda junto con el idioma del juego para que las notificaciones te lleguen en tu idioma. Se borra cuando eliminas tu cuenta en línea o desactivas las notificaciones; si desinstalas el juego,
 	el token puede dejar de ser válido posteriormente y lo quitaremos del servidor cuando el servicio nos informe de su invalidez.</li>
 </ul>
 <p>El servidor también registra la última vez que el juego estuvo en línea y lo usa para mostrar a los demás jugadores, en la clasificación y en sus listas de amigos, si estás jugando en este momento.
@@ -108,6 +108,8 @@ en la configuración de tu teléfono, en la sección Anuncios (según tu versió
 	<li>Reportes: 12 meses desde el último reporte.</li>
 	<li>Estadísticas de juego: un máximo de 14 meses en Google.</li>
 	<li>Reportes de errores: en el correo del desarrollador durante un máximo de 12 meses.</li>
+	<li>Expulsiones por incumplir las reglas: una huella unidireccional (hash) del ID de jugador, que no permite saber a quién pertenecía, para que una cuenta expulsada no pueda volver; se conserva incluso después de eliminar la cuenta, mientras el juego mantenga sus servicios en línea.</li>
+	<li>Registros técnicos del servidor y de FormSubmit (incluida la dirección IP de la conexión): solo por poco tiempo; se borran automáticamente.</li>
 </ul>
 
 <h2>Tus derechos</h2>
@@ -133,7 +135,7 @@ ubicación aproximada obtenida a partir de la dirección IP y datos de diagnóst
 
 <h2>Pagos</h2>
 <p>Las compras dentro del juego las gestiona <a href="https://policies.google.com/privacy">Google Play</a>. Solo Google ve tus datos de pago (tarjeta, dirección); ni el juego ni el desarrollador los reciben.
-El juego recibe una confirmación de la compra (identificador de la compra y producto comprado) y la guarda en tu dispositivo para acreditar cada compra una sola vez.
+El juego recibe una confirmación de la compra (identificador de la compra y producto comprado) y la guarda en tu dispositivo (y en la copia de seguridad del progreso en Juegos guardados de Google Play) para acreditar cada compra una sola vez.
 Las estadísticas de juego pueden registrar qué producto se compró y a qué precio, sin ningún dato de pago.</p>
 
 <h2>Eliminar tus datos</h2>

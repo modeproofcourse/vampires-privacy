@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <b aria-current="page" lang="de">Deutsch</b> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Datenschutzerklärung</h1>
-<p class="muted">Gültig ab 9. November 2026 · Entwickler: Martin Gofroj</p>
+<p class="muted">Gültig ab 12. November 2026 · Entwickler: Martin Gofroj</p>
 
 <h2>Welche Daten das Spiel verarbeitet</h2>
 <p>Das Spiel braucht keine Registrierung und keine Anmeldung und erfasst selbst weder deinen Namen noch deine E-Mail-Adresse, deinen Standort oder deine Kontakte
@@ -45,7 +45,7 @@ Damit Online-Ranglisten und Freunde funktionieren, sendet es folgende Daten an d
 	<li><b>Meldungen und Blockierungen</b>: wen du meldest und warum und wen du blockierst. Meldungen sieht nur die Spielleitung; die gemeldete Person erfährt nichts davon,</li>
 	<li><b>ein Benachrichtigungstoken</b> (nur wenn du Benachrichtigungen erlaubst): eine zufällige Kennung der App auf deinem Handy, über die du Benachrichtigungen zu Duellen von Freunden bekommst.
 	Die Benachrichtigungen stellt <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a> zu. Das Token wird nur dafür verwendet und
-	zusammen mit der Spielsprache gespeichert, damit Benachrichtigungen in deiner Sprache ankommen. Es wird gelöscht, wenn du dein Online-Konto löschst; wenn du das Spiel deinstallierst,
+	zusammen mit der Spielsprache gespeichert, damit Benachrichtigungen in deiner Sprache ankommen. Es wird gelöscht, wenn du dein Online-Konto löschst oder Benachrichtigungen deaktivierst; wenn du das Spiel deinstallierst,
 	kann das Token anschließend ungültig werden. Wir entfernen es vom Server, sobald der Dienst uns die Ungültigkeit meldet.</li>
 </ul>
 <p>Der Server merkt sich außerdem, wann das Spiel zuletzt online war, und zeigt anderen Spielern danach in der Rangliste und in Freundeslisten an, ob du gerade im Spiel bist.
@@ -108,6 +108,8 @@ in den Einstellungen deines Handys im Bereich „Anzeigen“ zurücksetzen oder 
 	<li>Meldungen: 12 Monate ab der letzten Meldung.</li>
 	<li>Spielstatistiken: bei Google höchstens 14 Monate.</li>
 	<li>Fehlermeldungen: höchstens 12 Monate im E-Mail-Postfach des Entwicklers.</li>
+	<li>Sperren wegen Regelverstößen: ein Einweg-Hashwert der Spieler-ID, aus dem sich nicht ermitteln lässt, wem sie gehörte, damit ein gesperrtes Konto nicht zurückkehren kann – auch nach dem Löschen des Kontos, solange das Spiel seine Online-Dienste betreibt.</li>
+	<li>Technische Protokolle des Servers und von FormSubmit (einschließlich der IP-Adresse der Verbindung): nur kurz; sie werden automatisch gelöscht.</li>
 </ul>
 
 <h2>Deine Rechte</h2>
@@ -133,7 +135,7 @@ ungefährer Standort aus der IP-Adresse sowie Diagnosedaten. Zwecke und Empfäng
 
 <h2>Zahlungen</h2>
 <p>Käufe im Spiel wickelt <a href="https://policies.google.com/privacy">Google Play</a> ab. Deine Zahlungsdaten (Karte, Adresse) sieht nur Google; weder das Spiel noch der Entwickler erhalten sie.
-Das Spiel erhält eine Kaufbestätigung (Kaufkennung und gekauftes Produkt) und speichert sie auf deinem Gerät, damit jeder Kauf nur einmal gutgeschrieben wird.
+Das Spiel erhält eine Kaufbestätigung (Kaufkennung und gekauftes Produkt) und speichert sie auf deinem Gerät (und in der Fortschrittssicherung unter „Gespeicherte Spiele“ in Google Play Spiele), damit jeder Kauf nur einmal gutgeschrieben wird.
 Die Spielstatistiken können erfassen, welches Produkt zu welchem Preis gekauft wurde, ohne jegliche Zahlungsdaten.</p>
 
 <h2>Löschen deiner Daten</h2>

@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <b aria-current="page" lang="fr">Français</b></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Politique de confidentialité</h1>
-<p class="muted">En vigueur à partir du 9 novembre 2026 · Développeur&nbsp;: Martin Gofroj</p>
+<p class="muted">En vigueur à partir du 12 novembre 2026 · Développeur&nbsp;: Martin Gofroj</p>
 
 <h2>Données traitées par le jeu</h2>
 <p>Le jeu ne demande ni inscription ni connexion et ne collecte pas lui-même ton nom, ton e-mail, ta position ni tes contacts
@@ -45,7 +45,7 @@ Pour que les classements en ligne et les amis fonctionnent, il envoie au serveur
 	<li><b>les signalements et blocages</b>&nbsp;: qui tu signales et pour quelle raison, et qui tu bloques. Seul l'administrateur du jeu voit les signalements&nbsp;; la personne signalée n'en est pas informée,</li>
 	<li><b>un jeton de notification</b> (seulement si tu autorises les notifications)&nbsp;: un identifiant aléatoire de l'application sur ton téléphone, qui sert à t'envoyer des notifications sur les défis de tes amis.
 	Les notifications sont envoyées via <a href="https://firebase.google.com/support/privacy">Google Firebase Cloud Messaging</a>&nbsp;; le jeton ne sert qu'à cela,
-	il est enregistré avec la langue du jeu pour que les notifications arrivent dans ta langue. Il est supprimé en même temps que ton compte en ligne&nbsp;; si tu désinstalles le jeu,
+	il est enregistré avec la langue du jeu pour que les notifications arrivent dans ta langue. Il est supprimé en même temps que ton compte en ligne ou quand tu désactives les notifications&nbsp;; si tu désinstalles le jeu,
 	le jeton peut devenir invalide par la suite. Nous le supprimons du serveur dès que le service nous signale son invalidité.</li>
 </ul>
 <p>Le serveur enregistre aussi quand le jeu a été en ligne pour la dernière fois, ce qui permet d'indiquer aux autres joueurs, dans le classement et dans leurs listes d'amis, si tu es en jeu en ce moment.
@@ -108,6 +108,8 @@ dans la rubrique Annonces des paramètres de ton téléphone (selon ta version d
 	<li>Signalements&nbsp;: 12&nbsp;mois à compter du dernier signalement.</li>
 	<li>Statistiques de jeu&nbsp;: au maximum 14&nbsp;mois chez Google.</li>
 	<li>Signalements de bugs&nbsp;: dans la boîte e-mail du développeur pendant 12 mois au maximum.</li>
+	<li>Exclusions pour non-respect des règles&nbsp;: une empreinte à sens unique (hachage) de l'identifiant de joueur, qui ne permet pas de savoir à qui il appartenait, afin qu'un compte exclu ne puisse pas revenir – conservée même après la suppression du compte, tant que le jeu propose ses services en ligne.</li>
+	<li>Journaux techniques du serveur et de FormSubmit (y compris l'adresse IP de la connexion)&nbsp;: seulement pendant une courte durée&nbsp;; ils sont supprimés automatiquement.</li>
 </ul>
 
 <h2>Tes droits</h2>
@@ -133,7 +135,7 @@ position approximative déduite de l'adresse IP, et données de diagnostic. Les 
 
 <h2>Paiements</h2>
 <p>Les achats dans le jeu sont gérés par <a href="https://policies.google.com/privacy">Google Play</a>. Seul Google voit tes données de paiement (carte, adresse)&nbsp;; ni le jeu ni le développeur ne les reçoivent.
-Le jeu reçoit une confirmation d'achat (identifiant de l'achat et produit acheté) et la conserve sur ton appareil pour que chaque achat ne soit crédité qu'une seule fois.
+Le jeu reçoit une confirmation d'achat (identifiant de l'achat et produit acheté) et la conserve sur ton appareil (et dans la sauvegarde de ta progression dans les Jeux enregistrés de Google Play) pour que chaque achat ne soit crédité qu'une seule fois.
 Les statistiques de jeu peuvent indiquer quel produit a été acheté et à quel prix, sans aucune donnée de paiement.</p>
 
 <h2>Supprimer tes données</h2>
