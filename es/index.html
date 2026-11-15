@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <b aria-current="page" lang="es-419">Español</b> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Política de privacidad</h1>
-<p class="muted">Vigente desde el 14 de noviembre de 2026 · Desarrollador: Martin Gofroj</p>
+<p class="muted">Vigente desde el 15 de noviembre de 2026 · Desarrollador: Martin Gofroj</p>
 
 <h2>Qué datos procesa el juego</h2>
 <p>El juego no requiere registro ni inicio de sesión, y por sí mismo no recopila tu nombre, correo electrónico, ubicación ni contactos
@@ -99,6 +99,7 @@ en la configuración de tu teléfono, en la sección Anuncios (según tu versió
 	<li><b>Notificaciones</b>: tu consentimiento para recibirlas y para el tratamiento del token correspondiente (art. 6.1.a) del RGPD); puedes retirar ese consentimiento desactivando las notificaciones en tu teléfono.</li>
 	<li><b>Estadísticas de juego y anuncios personalizados</b>: tu consentimiento (art. 6.1.a) del RGPD), que puedes cambiar en cualquier momento
 	en Configuración → Privacidad. Anuncios no personalizados y prevención del fraude: nuestro interés legítimo en financiar y proteger el juego (art. 6.1.f) del RGPD), cuando el tratamiento no requiera consentimiento. Si se necesita consentimiento para acceder a información de tu dispositivo, te lo pedimos. Los anuncios solo se reproducen cuando los tocas.</li>
+	<li><b>Verificación de compras y reembolsos</b>: para acreditarte lo que compraste – ejecución de un contrato (art. 6, apdo. 1, letra b del RGPD) – y nuestro interés legítimo en protegernos de compras fraudulentas y del abuso de reembolsos (art. 6, apdo. 1, letra f del RGPD).</li>
 	<li><b>Reportes de errores</b>: nuestro interés legítimo en corregir errores del juego (art. 6.1.f del RGPD). El reporte solo se envía cuando tú lo envías.</li>
 </ul>
 
@@ -110,6 +111,7 @@ en la configuración de tu teléfono, en la sección Anuncios (según tu versió
 	<li>Reportes: 12 meses desde el último reporte.</li>
 	<li>Registro de intervenciones de la administración: cuando quien administra el juego interviene en una cuenta (por ejemplo, cambia un apodo inapropiado, expulsa la cuenta por incumplir las reglas o resuelve reportes), se registra cuándo, qué y por qué, junto con el ID de jugador y el apodo que tenía en ese momento. El registro se conserva 12 meses desde la intervención, aunque elimines tu cuenta mientras tanto, y luego se elimina automáticamente. Solo quien administra el juego puede verlo.</li>
 	<li>Estadísticas de juego: un máximo de 14 meses en Google.</li>
+	<li>Compras verificadas (identificador de la compra, número de pedido, producto, hora): 12 meses desde la verificación, aunque elimines tu cuenta mientras tanto (entonces ya sin el ID de jugador), para que la misma compra no se pueda acreditar de nuevo; luego se eliminan automáticamente.</li>
 	<li>Reportes de errores: en el correo del desarrollador durante un máximo de 12 meses.</li>
 	<li>Expulsiones por incumplir las reglas: una huella unidireccional (hash) del ID de jugador, que no permite saber a quién pertenecía, para que una cuenta expulsada no pueda volver; se conserva incluso después de eliminar la cuenta, mientras el juego mantenga sus servicios en línea.</li>
 	<li>Registros técnicos del servidor y de FormSubmit (incluida la dirección IP de la conexión): solo por poco tiempo; se borran automáticamente.</li>
@@ -138,12 +140,12 @@ ubicación aproximada obtenida a partir de la dirección IP y datos de diagnóst
 
 <h2>Pagos</h2>
 <p>Las compras dentro del juego las gestiona <a href="https://policies.google.com/privacy">Google Play</a>. Solo Google ve tus datos de pago (tarjeta, dirección); ni el juego ni el desarrollador los reciben.
-El juego recibe una confirmación de la compra (identificador de la compra y producto comprado) y la guarda en tu dispositivo (y en la copia de seguridad del progreso en Juegos guardados de Google Play) para acreditar cada compra una sola vez.
+El juego recibe una confirmación de la compra (identificador de la compra y producto comprado) y la guarda en tu dispositivo (y en la copia de seguridad del progreso en Juegos guardados de Google Play) para acreditar cada compra una sola vez. Para acreditar solo las compras realmente pagadas y retirarlas tras un reembolso, el juego envía el identificador de la compra junto con el ID de jugador a nuestro servidor (Supabase, Irlanda). El servidor comprueba con Google Play que la compra está pagada y guarda el identificador de la compra, el número de pedido, el producto comprado y la hora de la compra; Google Play también le informa de los pagos reembolsados. Con cada compra, el juego entrega a Google una huella unidireccional del ID de jugador (no permite saber a quién pertenece) para poder asociar la compra a la cuenta correcta.
 Las estadísticas de juego pueden registrar qué producto se compró y a qué precio, sin ningún dato de pago.</p>
 
 <h2>Eliminar tus datos</h2>
 <p>Puedes eliminar tu cuenta en línea con todos los datos en línea (apodo, apariencia, resultados, nivel, amigos, desafíos, mensajes, reportes y bloqueos) desde el juego:
-Configuración → <b>Eliminar cuenta en línea</b>. Se elimina de inmediato y para siempre; solo se conservan, si los hay, el registro de una intervención de la administración (12 meses) y, en una cuenta expulsada, la huella del ID (consulta Cuánto tiempo conservamos los datos). Sin el juego, puedes solicitar la eliminación por correo electrónico a la dirección que aparece más abajo
+Configuración → <b>Eliminar cuenta en línea</b>. Se elimina de inmediato y para siempre; solo se conservan, si los hay, el registro de una intervención de la administración (12 meses), el registro de compras verificadas sin el ID de jugador (12 meses) y, en una cuenta expulsada, la huella del ID (consulta Cuánto tiempo conservamos los datos). Sin el juego, puedes solicitar la eliminación por correo electrónico a la dirección que aparece más abajo
 (incluye tu apodo y el código de invitación que ves en Amigos); la eliminaremos en un plazo de 30 días. Paso a paso: <a href="delete-account.html">Eliminar tu cuenta</a>.
 Al desinstalar el juego se borran los datos guardados en el dispositivo (las copias de seguridad de tu cuenta de Google se pueden eliminar en la configuración de Google).</p>
 <p>Las reglas sobre los apodos y la conducta en el juego están en las <a href="rules.html">Reglas de la comunidad</a>.</p>

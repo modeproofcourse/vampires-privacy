@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><b aria-current="page" lang="cs">Čeština</b> · <a href="en/" hreflang="en" lang="en">English</a> · <a href="pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <a href="es/" hreflang="es-419" lang="es-419">Español</a> · <a href="de/" hreflang="de" lang="de">Deutsch</a> · <a href="fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Zásady ochrany osobních údajů</h1>
-<p class="muted">Platné od 14.&nbsp;11.&nbsp;2026 · Vývojář: Martin Gofroj</p>
+<p class="muted">Platné od 15.&nbsp;11.&nbsp;2026 · Vývojář: Martin Gofroj</p>
 
 <h2>Co hra zpracovává</h2>
 <p>Hra nevyžaduje registraci ani přihlášení a sama nesbírá jméno, e-mail, polohu ani kontakty
@@ -102,6 +102,7 @@ v nastavení telefonu v části Reklamy (podle verze Androidu ji najdeš pod Sou
 	<li><b>Statistiky hraní a personalizované reklamy</b>: tvůj souhlas (čl. 6 odst. 1 písm. a GDPR), který můžeš kdykoli změnit
 	v Nastavení → Soukromí. Reklamy bez personalizace a ochrana před podvody: náš oprávněný zájem na financování a ochraně hry (čl. 6 odst. 1 písm. f GDPR),
 	pokud dané zpracování nevyžaduje souhlas. Tam, kde je k přístupu k údajům v zařízení souhlas nutný, si ho vyžádáme. Reklama se spustí, jen když na ni klepneš.</li>
+	<li><b>Ověření nákupů a&nbsp;vrácené platby</b>: abychom ti mohli připsat nákupy – plnění smlouvy (čl. 6 odst. 1 písm. b GDPR) – a&nbsp;náš oprávněný zájem na ochraně před podvodnými nákupy a&nbsp;zneužitím vrácení peněz (čl. 6 odst. 1 písm. f GDPR).</li>
 	<li><b>Nahlášení chyby</b>: náš oprávněný zájem na opravě chyb hry (čl. 6 odst. 1 písm. f GDPR). Posílá se jen, když ho odešleš.</li>
 </ul>
 
@@ -113,6 +114,7 @@ v nastavení telefonu v části Reklamy (podle verze Androidu ji najdeš pod Sou
 	<li>Nahlášení: 12 měsíců od posledního nahlášení.</li>
 	<li>Záznam zásahů správce: když správce hry u&nbsp;účtu zasáhne (například změní nevhodnou přezdívku, vyřadí účet za porušení pravidel nebo vyřídí nahlášení), zaznamená se, kdy, co a&nbsp;proč, s&nbsp;ID hráče a&nbsp;tehdejší přezdívkou. Záznam se uchovává 12 měsíců od zásahu, i&nbsp;když mezitím účet smažeš, pak se sám smaže. Vidí ho jen správce hry.</li>
 	<li>Statistiky hraní: u Googlu nejvýš 14 měsíců.</li>
+	<li>Ověřené nákupy (identifikátor nákupu, číslo objednávky, produkt, čas): 12 měsíců od ověření, i&nbsp;když mezitím účet smažeš (pak už bez ID hráče) – aby stejný nákup nešel připsat znovu; pak se samy smažou.</li>
 	<li>Nahlášení chyby: v e-mailu vývojáře nejvýš 12 měsíců.</li>
 	<li>Vyřazení za porušení pravidel: jednosměrný otisk ID hráče (nejde z&nbsp;něj zjistit, komu patřil), aby se vyřazený účet nemohl vrátit – i po smazání účtu, dokud hra provozuje online služby.</li>
 	<li>Provozní záznamy serveru a služby FormSubmit (včetně IP adresy spojení): jen krátce, mažou se samy.</li>
@@ -141,12 +143,12 @@ přibližná poloha odvozená z IP adresy a diagnostické údaje. Účel a pří
 
 <h2>Platby</h2>
 <p>Nákupy ve hře vyřizuje <a href="https://policies.google.com/privacy">Google Play</a>. Platební údaje (kartu, adresu) vidí jen Google, hra ani vývojář je nedostanou.
-Hra dostane potvrzení nákupu (identifikátor nákupu a koupený produkt) a uloží si ho v zařízení (a v&nbsp;záloze postupu v&nbsp;Uložených hrách Google Play), aby nákup připsala jen jednou.
+Hra dostane potvrzení nákupu (identifikátor nákupu a koupený produkt) a uloží si ho v zařízení (a v&nbsp;záloze postupu v&nbsp;Uložených hrách Google Play), aby nákup připsala jen jednou. Aby hra připsala jen skutečně zaplacený nákup a&nbsp;po vrácení peněz ho zase odebrala, pošle identifikátor nákupu spolu s&nbsp;ID hráče na náš server (Supabase, Irsko). Server si u&nbsp;Google Play ověří, že je nákup zaplacený, a&nbsp;uloží identifikátor nákupu, číslo objednávky, koupený produkt a&nbsp;čas nákupu; Google Play mu také hlásí vrácené platby. K&nbsp;nákupu hra Googlu předá jednosměrný otisk ID hráče (nejde z&nbsp;něj zjistit, komu patří), aby šlo poznat, kterému účtu nákup patří.
 Statistiky hraní mohou zaznamenat, který produkt byl koupen a za kolik, bez jakýchkoli platebních údajů.</p>
 
 <h2>Smazání údajů</h2>
 <p>Online účet se všemi online údaji (přezdívka, vzhled, výsledky, úroveň, přátelé, výzvy, vzkazy, hlášení a blokování) smažeš ve hře:
-Nastavení → <b>Smazat online účet</b>. Smaže se hned a natrvalo; zůstane jen případný záznam zásahu správce (12 měsíců) a&nbsp;u&nbsp;vyřazeného účtu otisk ID (viz Jak dlouho údaje uchováváme). Bez hry si smazání můžeš vyžádat e-mailem na adrese níže
+Nastavení → <b>Smazat online účet</b>. Smaže se hned a natrvalo; zůstane jen případný záznam zásahu správce (12 měsíců), záznam ověřených nákupů bez ID hráče (12 měsíců) a&nbsp;u&nbsp;vyřazeného účtu otisk ID (viz Jak dlouho údaje uchováváme). Bez hry si smazání můžeš vyžádat e-mailem na adrese níže
 (uveď přezdívku a kód pozvánky z Přátel) – smažeme do 30 dnů. Podrobný postup: <a href="smazani.html">Smazání účtu</a>.
 Odinstalováním hry se smažou data uložená v zařízení (zálohy v Google účtu smažeš v nastavení Googlu).</p>
 <p>Pravidla pro přezdívky a chování ve hře: <a href="pravidla.html">Pravidla komunity</a>.</p>

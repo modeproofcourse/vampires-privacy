@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <b aria-current="page" lang="pt-BR">Português (Brasil)</b> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Política de Privacidade</h1>
-<p class="muted">Em vigor desde 14 de novembro de 2026 · Desenvolvedor: Martin Gofroj</p>
+<p class="muted">Em vigor desde 15 de novembro de 2026 · Desenvolvedor: Martin Gofroj</p>
 
 <h2>Quais dados o jogo processa</h2>
 <p>O jogo não exige cadastro nem login e, por conta própria, não coleta seu nome, e-mail, localização nem contatos
@@ -99,6 +99,7 @@ nas configurações do celular, na seção Anúncios (dependendo da versão do A
 	<li><b>Notificações</b>: seu consentimento para recebê-las e para o processamento do token necessário (art. 6(1)(a) do GDPR); você pode retirar esse consentimento desativando as notificações no celular.</li>
 	<li><b>Estatísticas de jogo e anúncios personalizados</b>: seu consentimento (art. 6(1)(a) do GDPR), que você pode mudar a qualquer momento
 	em Configurações → Privacidade. Anúncios não personalizados e prevenção de fraudes: nosso interesse legítimo em financiar e proteger o jogo (art. 6(1)(f) do GDPR), quando o processamento não exigir consentimento. Quando o acesso a informações no dispositivo exigir consentimento, nós o solicitamos. Os anúncios só começam quando você toca neles.</li>
+	<li><b>Verificação de compras e reembolsos</b>: para creditar o que você comprou – execução de contrato (art. 6.º, n.º 1, alínea b do RGPD) – e nosso interesse legítimo em nos proteger de compras fraudulentas e do abuso de reembolsos (art. 6.º, n.º 1, alínea f do RGPD).</li>
 	<li><b>Relatórios de erro</b>: nosso interesse legítimo em corrigir erros do jogo (art. 6(1)(f) do RGPD). O relatório só é enviado quando você o envia.</li>
 </ul>
 
@@ -110,6 +111,7 @@ nas configurações do celular, na seção Anúncios (dependendo da versão do A
 	<li>Denúncias: 12 meses a partir da denúncia mais recente.</li>
 	<li>Registro de intervenções da administração: quando a administração do jogo intervém em uma conta (por exemplo, muda um apelido inadequado, bane a conta por violar as regras ou resolve denúncias), registramos quando, o quê e por quê, junto com o ID de jogador e o apelido da época. O registro é guardado por 12 meses a partir da intervenção, mesmo que você exclua a conta nesse meio-tempo, e depois é excluído automaticamente. Só a administração do jogo pode vê-lo.</li>
 	<li>Estatísticas de jogo: o Google as guarda por no máximo 14 meses.</li>
+	<li>Compras verificadas (identificador da compra, número do pedido, produto, horário): 12 meses a partir da verificação, mesmo que você exclua a conta nesse meio-tempo (aí já sem o ID de jogador), para que a mesma compra não possa ser creditada de novo; depois são excluídas automaticamente.</li>
 	<li>Relatórios de erro: no e-mail do desenvolvedor por no máximo 12 meses.</li>
 	<li>Banimentos por violação das regras: uma impressão digital unidirecional (hash) do ID de jogador, que não permite saber a quem pertencia, para que uma conta banida não possa voltar – guardada mesmo após a exclusão da conta, enquanto o jogo mantiver os serviços online.</li>
 	<li>Registros técnicos do servidor e do FormSubmit (incluindo o endereço IP da conexão): apenas por pouco tempo; são excluídos automaticamente.</li>
@@ -138,12 +140,12 @@ localização aproximada obtida a partir do endereço IP e dados de diagnóstico
 
 <h2>Pagamentos</h2>
 <p>As compras no jogo são processadas pelo <a href="https://policies.google.com/privacy">Google Play</a>. Só o Google vê seus dados de pagamento (cartão, endereço); nem o jogo nem o desenvolvedor os recebem.
-O jogo recebe uma confirmação da compra (identificador da compra e produto comprado) e a guarda no dispositivo (e no backup do progresso nos Jogos salvos do Google Play) para creditar cada compra uma única vez.
+O jogo recebe uma confirmação da compra (identificador da compra e produto comprado) e a guarda no dispositivo (e no backup do progresso nos Jogos salvos do Google Play) para creditar cada compra uma única vez. Para creditar só as compras realmente pagas e retirá-las depois de um reembolso, o jogo envia o identificador da compra junto com o ID de jogador ao nosso servidor (Supabase, Irlanda). O servidor confirma com o Google Play que a compra foi paga e guarda o identificador da compra, o número do pedido, o produto comprado e o horário da compra; o Google Play também informa a ele os pagamentos reembolsados. Em cada compra, o jogo entrega ao Google uma impressão digital unidirecional do ID de jogador (não permite descobrir a quem pertence), para associar a compra à conta certa.
 As estatísticas de jogo podem registrar qual produto foi comprado e por qual preço, sem nenhum dado de pagamento.</p>
 
 <h2>Exclusão dos seus dados</h2>
 <p>Você pode excluir sua conta online com todos os dados online (apelido, aparência, resultados, nível da conta, amigos, desafios, mensagens, denúncias e bloqueios) no jogo:
-Configurações → <b>Excluir conta online</b>. A exclusão é imediata e definitiva; ficam apenas, se houver, o registro de uma intervenção da administração (12 meses) e, no caso de uma conta banida, a impressão digital do ID (veja Por quanto tempo guardamos os dados). Sem o jogo, você pode pedir a exclusão por e-mail no endereço abaixo
+Configurações → <b>Excluir conta online</b>. A exclusão é imediata e definitiva; ficam apenas, se houver, o registro de uma intervenção da administração (12 meses), o registro de compras verificadas sem o ID de jogador (12 meses) e, no caso de uma conta banida, a impressão digital do ID (veja Por quanto tempo guardamos os dados). Sem o jogo, você pode pedir a exclusão por e-mail no endereço abaixo
 (informe seu apelido e o código de convite que aparece em Amigos) – vamos excluí-la em até 30 dias. Passo a passo: <a href="delete-account.html">Excluir sua conta</a>.
 Ao desinstalar o jogo, os dados salvos no dispositivo são excluídos (os backups na sua Conta do Google podem ser excluídos nas configurações do Google).</p>
 <p>Regras para apelidos e para o comportamento no jogo: <a href="rules.html">Regras da Comunidade</a>.</p>
