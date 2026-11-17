@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> · <b aria-current="page" lang="es-419">Español</b> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Política de privacidad</h1>
-<p class="muted">Vigente desde el 16 de noviembre de 2026 · Desarrollador: Martin Gofroj</p>
+<p class="muted">Vigente desde el 17 de noviembre de 2026 · Desarrollador: Martin Gofroj</p>
 
 <h2>Qué datos procesa el juego</h2>
 <p>El juego no requiere registro ni inicio de sesión, y por sí mismo no recopila tu nombre, correo electrónico, ubicación ni contactos
@@ -51,6 +51,7 @@ Para que funcionen las clasificaciones en línea y los amigos, envía al servido
 </ul>
 <p>El servidor también registra la última vez que el juego estuvo en línea y lo usa para mostrar a los demás jugadores, en la clasificación y en sus listas de amigos, si estás jugando en este momento.
 Con las partidas terminadas, el servidor calcula tu nivel de jugador (experiencia) y contabiliza las noches sobrevividas y el tiempo jugado; estos datos se muestran junto a tu retrato y en tu tarjeta de jugador.
+Cuando se crea una cuenta en línea nueva, el servidor guarda durante 1 hora una huella unidireccional (hash) de la dirección IP de la conexión (no la dirección en sí) para que no se puedan crear demasiadas cuentas desde una misma dirección.
 Tu apodo, tu apariencia y tus resultados se ven públicamente en las clasificaciones y en las listas de amigos de otros jugadores. Por eso, no pongas en tu apodo tu nombre real ni ningún otro dato personal.</p>
 <p>El progreso del juego, la configuración y tus propios resultados se guardan en tu dispositivo. Si en tu teléfono iniciaste sesión en
 <a href="https://policies.google.com/privacy">Google Play Juegos</a>, el juego también guarda una copia de seguridad de tu progreso en Juegos guardados de tu cuenta de Google,
@@ -94,7 +95,7 @@ en la configuración de tu teléfono, en la sección Anuncios (según tu versió
 <ul>
 	<li><b>Funciones en línea</b> (ID de jugador, apodo, apariencia, resultados, nivel, clasificaciones, amigos, desafíos y mensajes): para ofrecerte
 	las funciones del juego que usas (ejecución de un contrato, art. 6.1.b) del RGPD). Las clasificaciones, los amigos y los desafíos no pueden funcionar sin los datos necesarios para la cuenta en línea.</li>
-	<li><b>Reportes, bloqueos, verificación de apodos, registro de intervenciones de la administración y protección contra trampas</b>: nuestro interés legítimo en que el juego sea seguro y justo
+	<li><b>Reportes, bloqueos, verificación de apodos, registro de intervenciones de la administración y protección contra trampas y contra la creación masiva de cuentas</b>: nuestro interés legítimo en que el juego sea seguro y justo
 	(art. 6.1.f) del RGPD). El registro de intervenciones también sirve para atender objeciones a esas intervenciones y para defendernos ante posibles reclamaciones legales.</li>
 	<li><b>Notificaciones</b>: tu consentimiento para recibirlas y para el tratamiento del token correspondiente (art. 6.1.a) del RGPD); puedes retirar ese consentimiento desactivando las notificaciones en tu teléfono.</li>
 	<li><b>Estadísticas de juego y anuncios personalizados</b>: tu consentimiento (art. 6.1.a) del RGPD), que puedes cambiar en cualquier momento
@@ -108,13 +109,14 @@ en la configuración de tu teléfono, en la sección Anuncios (según tu versió
 	<li>Cuenta en línea (apodo, apariencia, resultados, nivel, amigos, bloqueos): hasta que elimines la cuenta
 	(o hasta que el juego deje de ofrecer sus servicios en línea). También eliminamos antes el token de notificaciones si FCM informa que ya no es válido.</li>
 	<li>Desafíos y mensajes: desafíos completados, 90 días; todos los demás, 14 días.</li>
-	<li>Reportes: 12 meses desde el último reporte.</li>
+	<li>Reportes: 12 meses desde el último reporte. Si la cuenta reportada se elimina mientras tanto, los reportes sin resolver en su contra se conservan solo para quien administra el juego (el ID de jugador y el apodo que tenía en ese momento, los motivos con cantidades y horas, sin quién los hizo) y se eliminan en el mismo plazo.</li>
 	<li>Registro de intervenciones de la administración: cuando quien administra el juego interviene en una cuenta (por ejemplo, cambia un apodo inapropiado, expulsa la cuenta por incumplir las reglas o resuelve reportes), se registra cuándo, qué y por qué, junto con el ID de jugador y el apodo que tenía en ese momento. El registro se conserva 12 meses desde la intervención, aunque elimines tu cuenta mientras tanto, y luego se elimina automáticamente. Solo quien administra el juego puede verlo.</li>
 	<li>Estadísticas de juego: un máximo de 14 meses en Google.</li>
 	<li>Compras verificadas (identificador de la compra, número de pedido, producto, hora): 12 meses desde la verificación, aunque elimines tu cuenta mientras tanto (entonces ya sin el ID de jugador), para que la misma compra no se pueda acreditar de nuevo; luego se eliminan automáticamente.</li>
 	<li>Pagos reembolsados (identificador de la compra, hora y motivo del reembolso, sin el ID de jugador): 12 meses desde el reembolso, para que una compra reembolsada se retire en todos los dispositivos; luego se eliminan automáticamente.</li>
 	<li>Reportes de errores: en el correo del desarrollador durante un máximo de 12 meses.</li>
 	<li>Expulsiones por incumplir las reglas: una huella unidireccional (hash) del ID de jugador, que no permite saber a quién pertenecía, para que una cuenta expulsada no pueda volver; se conserva incluso después de eliminar la cuenta, mientras el juego mantenga sus servicios en línea.</li>
+	<li>Protección contra la creación masiva de cuentas: al crear una cuenta en línea nueva, una huella unidireccional (hash) de la dirección IP de la conexión (no guardamos la dirección en sí) durante 1 hora; luego se borra automáticamente.</li>
 	<li>Registros técnicos del servidor y de FormSubmit (incluida la dirección IP de la conexión): solo por poco tiempo; se borran automáticamente.</li>
 </ul>
 
@@ -146,7 +148,7 @@ Las estadísticas de juego pueden registrar qué producto se compró y a qué pr
 
 <h2>Eliminar tus datos</h2>
 <p>Puedes eliminar tu cuenta en línea con todos los datos en línea (apodo, apariencia, resultados, nivel, amigos, desafíos, mensajes, reportes y bloqueos) desde el juego:
-Configuración → <b>Eliminar cuenta en línea</b>. Se elimina de inmediato y para siempre; solo se conservan, si los hay, el registro de una intervención de la administración (12 meses), el registro de compras verificadas sin el ID de jugador (12 meses) y, en una cuenta expulsada, la huella del ID (consulta Cuánto tiempo conservamos los datos). Sin el juego, puedes solicitar la eliminación por correo electrónico a la dirección que aparece más abajo
+Configuración → <b>Eliminar cuenta en línea</b>. Se elimina de inmediato y para siempre; solo se conservan, si los hay, el registro de una intervención de la administración (12 meses), los reportes sin resolver que otros jugadores hicieron contra la cuenta, sin quién los hizo (12 meses desde el último reporte), el registro de compras verificadas sin el ID de jugador (12 meses) y, en una cuenta expulsada, la huella del ID (consulta Cuánto tiempo conservamos los datos). Sin el juego, puedes solicitar la eliminación por correo electrónico a la dirección que aparece más abajo
 (incluye tu apodo y el código de invitación que ves en Amigos); la eliminaremos en un plazo de 30 días. Paso a paso: <a href="delete-account.html">Eliminar tu cuenta</a>.
 Al desinstalar el juego se borran los datos guardados en el dispositivo (las copias de seguridad de tu cuenta de Google se pueden eliminar en la configuración de Google).</p>
 <p>Las reglas sobre los apodos y la conducta en el juego están en las <a href="rules.html">Reglas de la comunidad</a>.</p>

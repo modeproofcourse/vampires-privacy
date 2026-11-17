@@ -30,7 +30,7 @@
 <nav class="langs" aria-label="Language"><a href="../" hreflang="cs" lang="cs">Čeština</a> · <a href="../en/" hreflang="en" lang="en">English</a> · <b aria-current="page" lang="pt-BR">Português (Brasil)</b> · <a href="../es/" hreflang="es-419" lang="es-419">Español</a> · <a href="../de/" hreflang="de" lang="de">Deutsch</a> · <a href="../fr/" hreflang="fr" lang="fr">Français</a></nav>
 <!-- <<< jazyky -->
 <h1>VAMPIRES! – Política de Privacidade</h1>
-<p class="muted">Em vigor desde 16 de novembro de 2026 · Desenvolvedor: Martin Gofroj</p>
+<p class="muted">Em vigor desde 17 de novembro de 2026 · Desenvolvedor: Martin Gofroj</p>
 
 <h2>Quais dados o jogo processa</h2>
 <p>O jogo não exige cadastro nem login e, por conta própria, não coleta seu nome, e-mail, localização nem contatos
@@ -51,6 +51,7 @@ Para que os rankings online e o recurso de amigos funcionem, ele envia ao servid
 </ul>
 <p>O servidor também registra quando o jogo esteve online pela última vez e usa isso para mostrar a outros jogadores, no ranking e nas listas de amigos, se você está jogando agora.
 A partir das partidas concluídas, o servidor calcula seu nível da conta (experiência) e soma as noites superadas e o tempo de jogo; esses dados aparecem ao lado do seu retrato e no seu perfil de jogador.
+Quando uma nova conta online é criada, o servidor guarda por 1 hora uma impressão digital unidirecional (hash) do endereço IP da conexão (não o próprio endereço), para que não seja possível criar contas demais a partir de um mesmo endereço.
 Seu apelido, sua aparência e seus resultados ficam visíveis publicamente nos rankings e nas listas de amigos de outros jogadores. Por isso, não use seu nome real nem outros dados pessoais no apelido.</p>
 <p>Seu progresso no jogo, as configurações e seus próprios resultados ficam salvos no seu dispositivo. Se você tiver feito login no
 <a href="https://policies.google.com/privacy">Google Play Games</a> no celular, o jogo também faz backup do seu progresso nos Jogos salvos da sua Conta do Google,
@@ -94,7 +95,7 @@ nas configurações do celular, na seção Anúncios (dependendo da versão do A
 <ul>
 	<li><b>Recursos online</b> (ID de jogador, apelido, aparência, resultados, nível da conta, rankings, amigos, desafios e mensagens): para podermos oferecer
 	os recursos do jogo que você usa (execução de contrato, art. 6(1)(b) do GDPR). Sem os dados necessários para a conta online, os rankings, os amigos e os desafios não podem funcionar.</li>
-	<li><b>Denúncias, bloqueios, verificação de apelidos, registro de intervenções da administração e proteção contra trapaças</b>: nosso interesse legítimo em um jogo seguro e justo
+	<li><b>Denúncias, bloqueios, verificação de apelidos, registro de intervenções da administração e proteção contra trapaças e contra a criação de contas em massa</b>: nosso interesse legítimo em um jogo seguro e justo
 	(art. 6(1)(f) do GDPR). O registro de intervenções também serve para tratar contestações dessas intervenções e para nos defender em eventuais ações judiciais.</li>
 	<li><b>Notificações</b>: seu consentimento para recebê-las e para o processamento do token necessário (art. 6(1)(a) do GDPR); você pode retirar esse consentimento desativando as notificações no celular.</li>
 	<li><b>Estatísticas de jogo e anúncios personalizados</b>: seu consentimento (art. 6(1)(a) do GDPR), que você pode mudar a qualquer momento
@@ -108,13 +109,14 @@ nas configurações do celular, na seção Anúncios (dependendo da versão do A
 	<li>Conta online (apelido, aparência, resultados, nível da conta, amigos, bloqueios): até você excluir a conta
 	(ou até o jogo encerrar os serviços online). Também removemos o token de notificação antes disso se o FCM informar que ele é inválido.</li>
 	<li>Desafios e mensagens: desafios concluídos, 90 dias; todos os demais, 14 dias.</li>
-	<li>Denúncias: 12 meses a partir da denúncia mais recente.</li>
+	<li>Denúncias: 12 meses a partir da denúncia mais recente. Se a conta denunciada for excluída nesse meio-tempo, as denúncias ainda não resolvidas contra ela ficam guardadas só para a administração do jogo (o ID de jogador e o apelido da época, os motivos com quantidades e horários – sem quem as fez) e são excluídas no mesmo prazo.</li>
 	<li>Registro de intervenções da administração: quando a administração do jogo intervém em uma conta (por exemplo, muda um apelido inadequado, bane a conta por violar as regras ou resolve denúncias), registramos quando, o quê e por quê, junto com o ID de jogador e o apelido da época. O registro é guardado por 12 meses a partir da intervenção, mesmo que você exclua a conta nesse meio-tempo, e depois é excluído automaticamente. Só a administração do jogo pode vê-lo.</li>
 	<li>Estatísticas de jogo: o Google as guarda por no máximo 14 meses.</li>
 	<li>Compras verificadas (identificador da compra, número do pedido, produto, horário): 12 meses a partir da verificação, mesmo que você exclua a conta nesse meio-tempo (aí já sem o ID de jogador), para que a mesma compra não possa ser creditada de novo; depois são excluídas automaticamente.</li>
 	<li>Pagamentos reembolsados (identificador da compra, horário e motivo do reembolso, sem o ID de jogador): 12 meses a partir do reembolso, para que uma compra reembolsada seja removida em todos os dispositivos; depois são excluídos automaticamente.</li>
 	<li>Relatórios de erro: no e-mail do desenvolvedor por no máximo 12 meses.</li>
 	<li>Banimentos por violação das regras: uma impressão digital unidirecional (hash) do ID de jogador, que não permite saber a quem pertencia, para que uma conta banida não possa voltar – guardada mesmo após a exclusão da conta, enquanto o jogo mantiver os serviços online.</li>
+	<li>Proteção contra a criação de contas em massa: quando uma nova conta online é criada, uma impressão digital unidirecional (hash) do endereço IP da conexão (o endereço em si não é guardado) por 1 hora; depois ela é excluída automaticamente.</li>
 	<li>Registros técnicos do servidor e do FormSubmit (incluindo o endereço IP da conexão): apenas por pouco tempo; são excluídos automaticamente.</li>
 </ul>
 
@@ -146,7 +148,7 @@ As estatísticas de jogo podem registrar qual produto foi comprado e por qual pr
 
 <h2>Exclusão dos seus dados</h2>
 <p>Você pode excluir sua conta online com todos os dados online (apelido, aparência, resultados, nível da conta, amigos, desafios, mensagens, denúncias e bloqueios) no jogo:
-Configurações → <b>Excluir conta online</b>. A exclusão é imediata e definitiva; ficam apenas, se houver, o registro de uma intervenção da administração (12 meses), o registro de compras verificadas sem o ID de jogador (12 meses) e, no caso de uma conta banida, a impressão digital do ID (veja Por quanto tempo guardamos os dados). Sem o jogo, você pode pedir a exclusão por e-mail no endereço abaixo
+Configurações → <b>Excluir conta online</b>. A exclusão é imediata e definitiva; ficam apenas, se houver, o registro de uma intervenção da administração (12 meses), as denúncias não resolvidas feitas por outros jogadores contra a conta, sem quem as fez (12 meses a partir da denúncia mais recente), o registro de compras verificadas sem o ID de jogador (12 meses) e, no caso de uma conta banida, a impressão digital do ID (veja Por quanto tempo guardamos os dados). Sem o jogo, você pode pedir a exclusão por e-mail no endereço abaixo
 (informe seu apelido e o código de convite que aparece em Amigos) – vamos excluí-la em até 30 dias. Passo a passo: <a href="delete-account.html">Excluir sua conta</a>.
 Ao desinstalar o jogo, os dados salvos no dispositivo são excluídos (os backups na sua Conta do Google podem ser excluídos nas configurações do Google).</p>
 <p>Regras para apelidos e para o comportamento no jogo: <a href="rules.html">Regras da Comunidade</a>.</p>

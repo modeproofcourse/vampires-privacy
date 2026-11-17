@@ -45,7 +45,7 @@ s předmětem „Smazání účtu“ a uveď svou přezdívku a kód pozvánky (
 
 <h2>Co se smaže</h2>
 <p>Natrvalo a hned: přezdívka, vzhled (obleky, pokrývky a barva jména), výsledky v žebříčcích, úroveň hráče, přežité noci a odehraný čas, přátelé a pozvánky, výzvy a vzkazy,
-nahlášení a blokování, token pro upozornění a náhodné ID hráče. Nic z toho si neponecháváme – výjimkou je jen případný záznam zásahu správce a&nbsp;u&nbsp;účtu vyřazeného za porušení pravidel otisk ID (viz níže).</p>
+nahlášení a blokování, token pro upozornění a náhodné ID hráče. Nic z toho si neponecháváme – výjimkou je jen případný záznam zásahu správce, nevyřízená nahlášení na účet od ostatních hráčů a&nbsp;u&nbsp;účtu vyřazeného za porušení pravidel otisk ID (viz níže).</p>
 
 <h2>Co zůstane</h2>
 <ul>
@@ -53,6 +53,7 @@ nahlášení a blokování, token pro upozornění a náhodné ID hráče. Nic z
 	<li>Statistiky hraní v Google Analytics pro Firebase – nejsou spojené s přezdívkou ani ID hráče (jen s náhodným ID instalace) a Google je maže nejpozději po 14 měsících.</li>
 	<li>Údaje, které zpracovává reklamní služba Google AdMob – řídí se <a href="https://policies.google.com/privacy">zásadami Googlu</a>.</li>
 	<li>Pokud u&nbsp;účtu zasáhl správce hry (například změnil nevhodnou přezdívku, vyřadil účet za porušení pravidel nebo vyřídil nahlášení), záznam o&nbsp;zásahu – kdy, co a&nbsp;proč, s&nbsp;ID hráče a&nbsp;tehdejší přezdívkou. Slouží k&nbsp;vyřizování námitek a&nbsp;ochraně hry před zneužitím, vidí ho jen správce hry a&nbsp;smaže se 12&nbsp;měsíců od zásahu.</li>
+	<li>Nevyřízená nahlášení, která na účet podali ostatní hráči – aby smazáním účtu nešlo stížnosti zahladit a&nbsp;ostatní hráči zůstali chráněni. Zůstane jen ID hráče a&nbsp;tehdejší přezdívka, důvody nahlášení s&nbsp;počty a&nbsp;časy, ne kdo je podal. Vidí je jen správce hry a&nbsp;smažou se 12&nbsp;měsíců od posledního nahlášení.</li>
 	<li>U účtu vyřazeného za porušení pravidel jednosměrný otisk ID hráče – nejde z&nbsp;něj zjistit, komu patřil, a brání jen tomu, aby se vyřazený účet vrátil.</li>
 	<li>Záznam ověřených nákupů (identifikátor nákupu, číslo objednávky, produkt, čas) – už bez ID hráče, aby stejný nákup nešel připsat znovu; smaže se 12&nbsp;měsíců od ověření.</li>
 	<li>Hlášení chyb odeslaná ze hry – zůstanou v&nbsp;e-mailu vývojáře nejvýš 12&nbsp;měsíců.</li>

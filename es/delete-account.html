@@ -45,7 +45,7 @@ con el asunto “Eliminación de cuenta” e incluye tu apodo y tu código de in
 
 <h2>Qué se elimina</h2>
 <p>De forma permanente e inmediata: apodo, apariencia (atuendos, sombreros y color del nombre), resultados en las clasificaciones, nivel de jugador, noches sobrevividas y tiempo jugado, amigos e invitaciones, desafíos y mensajes,
-reportes y bloqueos, el token de notificaciones y el ID de jugador aleatorio. No conservamos nada de esto; las únicas excepciones son el registro de una posible intervención de la administración y, en una cuenta expulsada por incumplir las reglas, una huella del ID (ver abajo).</p>
+reportes y bloqueos, el token de notificaciones y el ID de jugador aleatorio. No conservamos nada de esto; las únicas excepciones son el registro de una posible intervención de la administración, los reportes sin resolver que otros jugadores hicieron contra la cuenta y, en una cuenta expulsada por incumplir las reglas, una huella del ID (ver abajo).</p>
 
 <h2>Qué se conserva</h2>
 <ul>
@@ -53,6 +53,7 @@ reportes y bloqueos, el token de notificaciones y el ID de jugador aleatorio. No
 	<li>Las estadísticas de juego en Google Analytics para Firebase: no se vinculan con tu apodo ni con tu ID de jugador (solo con el ID aleatorio de instancia de la aplicación), y Google las elimina como máximo a los 14 meses.</li>
 	<li>Los datos que procesa el servicio de anuncios Google AdMob: se rigen por la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</li>
 	<li>Si quien administra el juego intervino en la cuenta (por ejemplo, cambió un apodo inapropiado, expulsó la cuenta por incumplir las reglas o resolvió reportes), el registro de la intervención: cuándo, qué y por qué, junto con el ID de jugador y el apodo que tenía en ese momento. Sirve para atender objeciones y proteger el juego contra abusos; solo quien administra el juego puede verlo y se elimina 12 meses después de la intervención.</li>
+	<li>Los reportes sin resolver que otros jugadores hicieron contra la cuenta: se conservan para que eliminar la cuenta no borre las quejas y los demás jugadores sigan protegidos. Solo quedan el ID de jugador y el apodo que tenía en ese momento, y los motivos de los reportes con cantidades y horas, sin quién los hizo. Solo quien administra el juego puede verlos y se eliminan 12 meses después del último reporte.</li>
 	<li>En una cuenta expulsada por incumplir las reglas, una huella unidireccional del ID de jugador: no permite saber a quién pertenecía y solo impide que la cuenta expulsada vuelva.</li>
 	<li>El registro de compras verificadas (identificador de la compra, número de pedido, producto, hora): ya sin el ID de jugador, para que la misma compra no se pueda acreditar de nuevo; se elimina 12 meses después de la verificación.</li>
 	<li>Los reportes de errores enviados desde el juego: permanecen en el correo del desarrollador durante un máximo de 12 meses.</li>
